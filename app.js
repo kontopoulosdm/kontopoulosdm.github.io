@@ -14,19 +14,15 @@ app.get(
               let result = {} 
               try{ result.success = true;}
               catch(e){ result.success = false;} 
-              finally{                 
-                 for (var hubObj of config.hubsarray){
-                     if(hubObj.hub_id == myHub){
-                        myUrls = hubObj.urls;
+              finally{   
+                        myUrls = config
                         res.send(myUrls);
-                        break; 
-                     } 
-                 } 
+                    } 
                  if(myUrls == ""){ 
                         res.send("noUrls");
                  }
           }
-    });
+    );
 
 var httpServer = http.createServer(app);
 
