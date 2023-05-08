@@ -9,7 +9,7 @@ const config = require('./config');
 const app = express();
 app.use(cors());
 app.get( 
-        "/scipts",
+        "/scripts",
         async (req, res) => {
               let result = {} 
               try{ result.success = true;}
