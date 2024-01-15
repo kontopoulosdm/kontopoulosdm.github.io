@@ -52,7 +52,7 @@
   },
   {
     "room": "Lobby",
-    "id": "bSwZVUz",
+    "id": "YgXxjRN",
     "allow_map": true,
     "allow_agent": false,
     "allow_navigation": false,
@@ -64,5 +64,12 @@
       "center": [0, -0.034],
       "centeroffset": [0, 0]
     }
+  },
+  {
+    "room": "Conference Room",
+    "id": "bQ4vf2n",
+    "allow_map": false,
+    "allow_agent": true,
+    "allow_navigation": false
   }
 ]
