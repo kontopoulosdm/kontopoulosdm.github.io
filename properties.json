@@ -1,7 +1,7 @@
 [
   {
     "room": "Tradeshows",
-    "id": "7mDvHxS",
+    "id": ["7mDvHxS", "bSwZVUz"],
     "allow_map": true,
     "allow_agent": true,
     "allow_navigation": true,
@@ -52,7 +52,7 @@
   },
   {
     "room": "Lobby",
-    "id": "4J22S6i",
+    "id": ["4J22S6i", "YgXxjRN"],
     "allow_map": true,
     "allow_agent": false,
     "allow_navigation": false,
@@ -67,7 +67,7 @@
   },
   {
     "room": "Conference Room",
-    "id": "AxFm4cE",
+    "id": ["AxFm4cE", "bQ4vf2n"],
     "allow_map": false,
     "allow_agent": false,
     "allow_navigation": false
