@@ -53,7 +53,7 @@
   {
     "room": "Lobby",
     "id": ["4J22S6i", "YgXxjRN"],
-    "allow_map": true,
+    "allow_map": false,
     "allow_agent": false,
     "allow_navigation": false,
     "map": {
