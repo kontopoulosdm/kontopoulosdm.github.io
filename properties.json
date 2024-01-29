@@ -1,7 +1,7 @@
 [
   {
     "room": "Tradeshows",
-    "id": ["7mDvHxS", "bSwZVUz", "kesVqEA", "wPsLCeG", "VQJ7Vae"],
+    "id": ["7mDvHxS", "bSwZVUz"],
     "allow_map": true,
     "allow_agent": true,
     "allow_navigation": true,
@@ -52,7 +52,7 @@
   },
   {
     "room": "Lobby",
-    "id": ["4J22S6i", "YgXxjRN"],
+    "id": ["4J22S6i", "YgXxjRN", "kesVqEA", "wPsLCeG", "VQJ7Vae"],
     "allow_map": false,
     "allow_agent": false,
     "allow_navigation": false,
