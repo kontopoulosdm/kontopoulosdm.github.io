@@ -4,9 +4,16 @@
     "id": ["7mDvHxS", "bSwZVUz", "jc4UGeB", "tTVCqkV"],
     "allow_map": true,
     "allow_agent": true,
-    "allow_navigation": true,
-    "allow_translation": false,
+    "translation": {
+      "allow": true,
+      "conversation": "bubble",
+      "spatiality": {
+        "type": "room"
+      },
+      "panel": { "type": "avatar" }
+    },
     "navigation": {
+      "allow": true,
       "targets": [
         { "name": "booth 1", "pivot": [-7.5, 0, 8], "box": [8, 12, 6, 10] },
         { "name": "booth 2", "pivot": [-7.5, 0, 21], "box": [8, 12, 19, 23] },
@@ -64,8 +71,8 @@
     ],
     "allow_map": false,
     "allow_agent": false,
-    "allow_navigation": false,
-    "allow_translation": false,
+    "navigation": { "allow": true },
+    "translation": { "allow": false },
     "map": {
       "file": "https://kontopoulosdm.github.io/lobby_map.png",
       "ratio": 0.5,
@@ -80,7 +87,25 @@
     "id": ["AxFm4cE", "bQ4vf2n"],
     "allow_map": false,
     "allow_agent": false,
-    "allow_navigation": false,
-    "allow_translation": true
+    "navigation": { "allow": true },
+    "translation": {
+      "allow": true,
+      "conversation": "presentation",
+      "spatiality": { "type": "room" },
+      "panel": { "type": "fixed", "data": [1, 2, 3] }
+    }
+  },
+  {
+    "room": "Business Room",
+    "id": [],
+    "allow_map": false,
+    "allow_agent": false,
+    "navigation": { "allow": true },
+    "translation": {
+      "allow": true,
+      "conversation": "duo",
+      "spatiality": { "type": "room" },
+      "panel": { "type": "fixed", "data": [1, 2, 3] }
+    }
   }
 ]
