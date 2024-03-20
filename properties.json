@@ -1,14 +1,15 @@
 [
   {
     "room": "Tradeshows",
-    "id": ["7mDvHxS", "bSwZVUz", "jc4UGeB", "tTVCqkV"],
+    "id": ["bSwZVUz", "7mDvHxS", "jc4UGeB", "tTVCqkV"],
     "allow_map": true,
     "allow_agent": true,
     "translation": {
       "allow": true,
       "conversation": "bubble",
       "spatiality": {
-        "type": "room"
+        "type": "borders",
+        "data": [-13, 13, 2, -12]
       },
       "panel": { "type": "avatar" }
     },
