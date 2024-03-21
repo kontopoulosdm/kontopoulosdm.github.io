@@ -95,8 +95,8 @@
         "type": "presentation",
         "data": [4.0, 16.0, -20.0, -15.2]
       },
-      "spatiality": { "type": "room", "data": [10, 7.5, -21.3] },
-      "panel": { "type": "fixed", "data": [10, 7.5, 21.3] }
+      "spatiality": { "type": "room" },
+      "panel": { "type": "fixed", "data": [10, 7.5, -21.3] }
     }
   },
   {
