@@ -6,7 +6,7 @@
     "allow_agent": true,
     "translation": {
       "allow": true,
-      "conversation": "bubble",
+      "conversation": { "type": "bubble" },
       "spatiality": {
         "type": "borders",
         "data": [-13.0, 13.0, -12.0, 2.0]
@@ -91,9 +91,12 @@
     "navigation": { "allow": true },
     "translation": {
       "allow": true,
-      "conversation": "presentation",
-      "spatiality": { "type": "room" },
-      "panel": { "type": "fixed", "data": [1, 2, 3] }
+      "conversation": {
+        "type": "presentation",
+        "data": [4.0, 16.0, -20.0, -15.2]
+      },
+      "spatiality": { "type": "room", "data": [10, 7.5, -21.3] },
+      "panel": { "type": "fixed", "data": [10, 7.5, 21.3] }
     }
   },
   {
@@ -104,7 +107,7 @@
     "navigation": { "allow": true },
     "translation": {
       "allow": true,
-      "conversation": "duo",
+      "conversation": { "type": "duo" },
       "spatiality": { "type": "room" },
       "panel": { "type": "fixed", "data": [1, 2, 3] }
     }
