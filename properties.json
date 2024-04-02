@@ -21,6 +21,27 @@
       "roomLength": [20, 10],
       "center": [0, -0.034],
       "centeroffset": [0, 0]
+    },
+    "tutorial": {
+      "allow": true,
+      "congrats_slides": [
+        "https://kontopoulosdm.github.io/tutorial_congrats_0.png",
+        "https://kontopoulosdm.github.io/tutorial_congrats_1.png",
+        "https://kontopoulosdm.github.io/tutorial_congrats_2.png",
+        "https://kontopoulosdm.github.io/tutorial_congrats_3.png"
+      ],
+      "slides": [
+        "https://kontopoulosdm.github.io/tutorial_0.png",
+        "https://kontopoulosdm.github.io/tutorial_1.png",
+        "https://kontopoulosdm.github.io/tutorial_2.png",
+        "https://kontopoulosdm.github.io/tutorial_3.png",
+        "https://kontopoulosdm.github.io/tutorial_4.png",
+        "https://kontopoulosdm.github.io/tutorial_5.png",
+        "https://kontopoulosdm.github.io/tutorial_6.png",
+        "https://kontopoulosdm.github.io/tutorial_7.png",
+        "https://kontopoulosdm.github.io/tutorial_8.png",
+        "https://kontopoulosdm.github.io/tutorial_9.png"
+      ]
     }
   },
   {
@@ -81,7 +102,8 @@
       "roomLength": [35, 40],
       "center": [0, -0.0435],
       "centeroffset": [0, 20]
-    }
+    },
+    "tutorial": { "allow": false }
   },
   {
     "room": "Conference Room",
@@ -97,7 +119,8 @@
       "spatiality": { "type": "room" },
       "panel": { "type": "fixed", "data": [10, 7.5, -21.3] }
     },
-    "map": { "allow": false }
+    "map": { "allow": false },
+    "tutorial": { "allow": false }
   },
   {
     "room": "Business Room",
@@ -110,6 +133,7 @@
       "spatiality": { "type": "room" },
       "panel": { "type": "fixed", "data": [1, 2, 3] }
     },
-    "map": { "allow": false }
+    "map": { "allow": false },
+    "tutorial": { "allow": false }
   }
 ]
