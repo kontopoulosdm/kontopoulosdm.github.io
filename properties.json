@@ -62,11 +62,11 @@
       "targets": [
         {
           "name": "conference room",
-          "pivot": [26.75, 44.5]
+          "position": [26.75, 44.5]
         },
         {
           "name": "business room",
-          "pivot": [11, -4]
+          "position": [11, -4]
         },
         {
           "name": "social area",
