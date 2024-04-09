@@ -41,7 +41,9 @@
         "https://kontopoulosdm.github.io/tutorial_7.png",
         "https://kontopoulosdm.github.io/tutorial_8.png",
         "https://kontopoulosdm.github.io/tutorial_9.png"
-      ]
+      ],
+      "position": [1.0, 2.0, 5],
+      "ratio": 0.4545
     }
   },
   {
