@@ -43,7 +43,8 @@
         "https://kontopoulosdm.github.io/tutorial_9.png"
       ],
       "position": [1.0, 2.0, 5],
-      "ratio": 0.4545
+      "ratio": 0.4545,
+      "rotation": [0, 1.5708, 0]
     }
   },
   {
