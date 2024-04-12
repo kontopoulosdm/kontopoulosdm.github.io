@@ -10,11 +10,11 @@
       "k99ovZX",
       "jFowNeg"
     ],
-    "allow_agent": false,
-    "navigation": { "allow": false },
-    "translation": { "allow": false },
+    "agent": [],
+    "navigation": { "allow": ["YgXxjRN", "4J22S6i", "kesVqEA", "wPsLCeG"] },
+    "translation": { "allow": [] },
     "map": {
-      "allow": true,
+      "allow": ["all"],
       "file": "https://kontopoulosdm.github.io/lobby_map.png",
       "ratio": 0.5,
       "mapToImage": [0.8, 0.8],
@@ -23,36 +23,20 @@
       "centeroffset": [0, 0]
     },
     "tutorial": {
-      "allow": true,
-      "congrats_slides": [
-        "https://kontopoulosdm.github.io/tutorial_congrats_0.png",
-        "https://kontopoulosdm.github.io/tutorial_congrats_1.png",
-        "https://kontopoulosdm.github.io/tutorial_congrats_2.png",
-        "https://kontopoulosdm.github.io/tutorial_congrats_3.png"
-      ],
-      "slides": [
-        "https://kontopoulosdm.github.io/tutorial_0.png",
-        "https://kontopoulosdm.github.io/tutorial_1.png",
-        "https://kontopoulosdm.github.io/tutorial_2.png",
-        "https://kontopoulosdm.github.io/tutorial_3.png",
-        "https://kontopoulosdm.github.io/tutorial_4.png",
-        "https://kontopoulosdm.github.io/tutorial_5.png",
-        "https://kontopoulosdm.github.io/tutorial_6.png",
-        "https://kontopoulosdm.github.io/tutorial_7.png",
-        "https://kontopoulosdm.github.io/tutorial_8.png",
-        "https://kontopoulosdm.github.io/tutorial_9.png"
-      ],
+      "allow": ["all"],
+      "slides": 13,
       "position": [1.0, 2.0, 5],
       "ratio": 0.4545,
-      "rotation": [0, 1.5708, 0]
+      "rotation": [0, 1.5708, 0],
+      "type": "fixed"
     }
   },
   {
     "room": "Tradeshows",
     "id": ["bSwZVUz", "7mDvHxS", "jc4UGeB", "tTVCqkV"],
-    "allow_agent": true,
+    "agent": ["bSwZVUz", "7mDvHxS", "jc4UGeB"],
     "translation": {
-      "allow": true,
+      "allow": [],
       "conversation": { "type": "bubble" },
       "spatiality": {
         "type": "borders",
@@ -61,7 +45,7 @@
       "panel": { "type": "avatar" }
     },
     "navigation": {
-      "allow": true,
+      "allow": ["bSwZVUz", "7mDvHxS", "jc4UGeB"],
       "targets": [
         {
           "name": "conference room",
@@ -143,7 +127,7 @@
       ]
     },
     "map": {
-      "allow": true,
+      "allow": ["all"],
       "file": "https://kontopoulosdm.github.io/tradeshows_map.png",
       "ratio": 1.1,
       "mapToImage": [0.869, 0.91],
@@ -151,15 +135,22 @@
       "center": [0, -0.0435],
       "centeroffset": [0, 20]
     },
-    "tutorial": { "allow": false }
+    "tutorial": {
+      "allow": ["all"],
+      "slides": 4,
+      "position": [0, 0, -1],
+      "rotation": [0, 0, 0],
+      "ratio": 0.4545,
+      "type": "moving"
+    }
   },
   {
     "room": "Conference Room",
     "id": ["bQ4vf2n", "AxFm4cE"],
-    "allow_agent": false,
-    "navigation": { "allow": false },
+    "allow_agent": [],
+    "navigation": { "allow": [] },
     "translation": {
-      "allow": true,
+      "allow": ["all"],
       "conversation": {
         "type": "presentation",
         "data": [4.0, 16.0, -20.0, -15.2]
@@ -167,21 +158,28 @@
       "spatiality": { "type": "room" },
       "panel": { "type": "fixed", "data": [10, 7.5, -21.3] }
     },
-    "map": { "allow": false },
-    "tutorial": { "allow": false }
+    "map": { "allow": [] },
+    "tutorial": {
+      "allow": ["all"],
+      "slides": 2,
+      "position": [0, 0, -1],
+      "rotation": [0, 0, 0],
+      "ratio": 0.4545,
+      "type": "moving"
+    }
   },
   {
     "room": "Business Room",
     "id": [],
-    "allow_agent": false,
-    "navigation": { "allow": true },
+    "agent": [],
+    "navigation": { "allow": ["all"] },
     "translation": {
-      "allow": true,
+      "allow": ["all"],
       "conversation": { "type": "duo" },
       "spatiality": { "type": "room" },
       "panel": { "type": "fixed", "data": [1, 2, 3] }
     },
-    "map": { "allow": false },
-    "tutorial": { "allow": false }
+    "map": { "allow": [] },
+    "tutorial": { "allow": [] }
   }
 ]
