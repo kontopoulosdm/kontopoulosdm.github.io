@@ -147,7 +147,7 @@
   {
     "room": "Conference Room",
     "id": ["bQ4vf2n", "AxFm4cE"],
-    "allow_agent": [],
+    "agent": [],
     "navigation": { "allow": [] },
     "translation": {
       "allow": ["all"],
