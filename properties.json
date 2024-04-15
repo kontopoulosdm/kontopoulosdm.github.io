@@ -16,7 +16,7 @@
     "map": {
       "allow": ["all"],
       "image_ratio": 1,
-      "scale_ratio": [100, 100]
+      "scale_ratio": [0.1, 0.1]
     },
     "tutorial": {
       "allow": ["all"],
