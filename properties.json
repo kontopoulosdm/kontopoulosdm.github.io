@@ -16,7 +16,8 @@
     "map": {
       "allow": ["all"],
       "image_ratio": 1,
-      "scale_ratio": [0.1, 0.1]
+      "scale_ratio": [0.1, 0.1],
+      "scale": 1
     },
     "tutorial": {
       "allow": ["all"],
@@ -124,12 +125,9 @@
     },
     "map": {
       "allow": ["all"],
-      "file": "https://kontopoulosdm.github.io/tradeshows_map.png",
-      "ratio": 1.1,
-      "mapToImage": [0.869, 0.91],
-      "roomLength": [35, 40],
-      "center": [0, -0.0435],
-      "centeroffset": [0, 20]
+      "image_ratio": 2.16,
+      "scale_ratio": [0.02, 0.02],
+      "scale": 1.3
     },
     "tutorial": {
       "allow": ["all"],
