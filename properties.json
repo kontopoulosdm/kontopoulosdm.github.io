@@ -26,6 +26,11 @@
       "ratio": 0.4545,
       "rotation": [0, 1.5708, 0],
       "type": "fixed"
+    },
+    "help": {
+      "allow": ["all"],
+      "slides": 5,
+      "ratio": 0.4538
     }
   },
   {
@@ -136,6 +141,11 @@
       "rotation": [0, 0, 0],
       "ratio": 0.4545,
       "type": "moving"
+    },
+    "help": {
+      "allow": ["all"],
+      "slides": 5,
+      "ratio": 0.4538
     }
   },
   {
@@ -160,6 +170,11 @@
       "rotation": [0, 0, 0],
       "ratio": 0.4545,
       "type": "moving"
+    },
+    "help": {
+      "allow": ["all"],
+      "slides": 5,
+      "ratio": 0.4538
     }
   },
   {
