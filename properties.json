@@ -144,8 +144,8 @@
     },
     "help": {
       "allow": ["all"],
-      "slides": 5,
-      "ratio": 0.4538
+      "slides": 4,
+      "ratio": 0.4545
     }
   },
   {
@@ -173,8 +173,8 @@
     },
     "help": {
       "allow": ["all"],
-      "slides": 5,
-      "ratio": 0.4538
+      "slides": 4,
+      "ratio": 0.4545
     }
   },
   {
