@@ -2,22 +2,36 @@
   {
     "room": "Lobby",
     "id": [
-      "YgXxjRN",
-      "4J22S6i",
-      "kesVqEA",
-      "wPsLCeG",
-      "VQJ7Vae",
-      "k99ovZX",
-      "jFowNeg"
+      "9qsnWnJ",
+      "QBomv74",
+      "af9PnW9",
+      "E2XSyEf",
+      "gdFfcCM",
+      "9gu4MCe",
+      "3JoiD9s",
+      "rGknn7t",
+      "HTEeuxW",
+      "vEyR7ns",
+      "7KLVrt6",
+      "2EnuRGU"
     ],
     "agent": [],
-    "navigation": { "allow": ["YgXxjRN", "4J22S6i", "kesVqEA", "wPsLCeG"] },
+    "navigation": {
+      "allow": [
+        "9qsnWnJ",
+        "QBomv74",
+        "af9PnW9",
+        "E2XSyEf",
+        "gdFfcCM",
+        "9gu4MCe"
+      ]
+    },
     "translation": { "allow": [] },
     "map": {
       "allow": ["all"],
       "image_ratio": 1,
       "room_size": [10, 10],
-      "scale": 2
+      "scale": 1.5
     },
     "tutorial": {
       "allow": ["all"],
@@ -35,8 +49,21 @@
   },
   {
     "room": "Tradeshows",
-    "id": ["bSwZVUz", "7mDvHxS", "jc4UGeB", "tTVCqkV"],
-    "agent": ["bSwZVUz", "7mDvHxS", "jc4UGeB"],
+    "id": [
+      "8ZQJfxA",
+      "pptdq9h",
+      "SDr5ZWj",
+      "LC6urY7",
+      "2WHssVZ",
+      "rYSLKJH",
+      "CsFCDfN",
+      "QnkaogG",
+      "Xks4ep7",
+      "Hy2Y5Y2",
+      "QSji8cs",
+      "uy7H9tk"
+    ],
+    "agent": ["8ZQJfxA", "pptdq9h", "SDr5ZWj", "LC6urY7", "2WHssVZ", "rYSLKJH"],
     "translation": {
       "allow": [],
       "conversation": { "type": "bubble" },
@@ -47,7 +74,14 @@
       "panel": { "type": "avatar" }
     },
     "navigation": {
-      "allow": ["bSwZVUz", "7mDvHxS", "jc4UGeB"],
+      "allow": [
+        "8ZQJfxA",
+        "pptdq9h",
+        "SDr5ZWj",
+        "LC6urY7",
+        "2WHssVZ",
+        "rYSLKJH"
+      ],
       "targets": [
         {
           "name": "conference room",
