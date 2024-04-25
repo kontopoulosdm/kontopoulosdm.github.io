@@ -74,7 +74,14 @@
       "panel": { "type": "avatar" }
     },
     "navigation": {
-      "allow": ["all"],
+      "allow": [
+        "8ZQJfxA",
+        "pptdq9h",
+        "SDr5ZWj",
+        "LC6urY7",
+        "2WHssVZ",
+        "rYSLKJH"
+      ],
       "targets": [
         {
           "name": "conference room",
