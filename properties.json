@@ -201,14 +201,14 @@
       {
         "name": "social_area",
         "ratio": 0.33,
-        "position": [5, 4, -42],
+        "position": [5, 4, 42.04],
         "rotation": [0, 0, 0],
         "scale": 4.2
       },
       {
         "name": "guidance_1",
         "ratio": 0.5,
-        "position": [23.45, 2.5, -45],
+        "position": [23.48, 2.5, 45],
         "rotation": [0, -90, 0],
         "scale": 3
       },
