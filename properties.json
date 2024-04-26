@@ -58,7 +58,7 @@
         "name": "conference_entrance",
         "position": [9.9, 4, 5],
         "rotation": [0, -90, 0],
-        "scale": 2.37,
+        "scale": 8.55,
         "ratio": 0.2
       }
     ]
@@ -196,49 +196,49 @@
         "ratio": 0.166,
         "position": [0.1, 2, 54],
         "rotation": [0, 90, 0],
-        "scale": 2.35
+        "scale": 9.77
       },
       {
         "name": "social_area",
         "ratio": 0.33,
         "position": [5, 4, -42],
         "rotation": [0, 0, 0],
-        "scale": 8.55
+        "scale": 4.2
       },
       {
         "name": "guidance_1",
         "ratio": 0.5,
         "position": [23.45, 2.5, -45],
         "rotation": [0, -90, 0],
-        "scale": 1.5
+        "scale": 3
       },
       {
         "name": "guidance_2",
         "ratio": 0.5,
         "position": [29.9, 2.5, 26],
         "rotation": [0, -90, 0],
-        "scale": 1.5
+        "scale": 3
       },
       {
         "name": "tradeshows",
         "ratio": 0.5,
         "position": [23.48, 2.5, 15],
         "rotation": [0, -90, 0],
-        "scale": 2
+        "scale": 4
       },
       {
         "name": "business_room",
         "ratio": 0.25,
         "position": [13.52, 4, 4],
         "rotation": [0, 90, 0],
-        "scale": 0.8
+        "scale": 3.22
       },
       {
         "name": "conference_room",
         "ratio": 0.2,
         "position": [26.75, 4, 46.96],
         "rotation": [0, 180, 0],
-        "scale": 1
+        "scale": 5.46
       }
     ]
   },
@@ -276,14 +276,14 @@
         "ratio": 0.25,
         "position": [19.98, 5, -15],
         "rotation": [0, -90, 0],
-        "scale": 1.933
+        "scale": 9.66
       },
       {
         "name": "conference_room_l",
         "ratio": 0.25,
         "position": [0.02, 5, -15],
         "rotation": [0, 90, 0],
-        "scale": 1.933
+        "scale": 9.66
       },
       {
         "name": "tradeshows",
