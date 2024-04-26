@@ -51,14 +51,14 @@
         "name": "before_starting",
         "position": [0.1, 4, 5],
         "rotation": [0, 90, 0],
-        "scale": [2.37, 2.37, 2.37],
+        "scale": 8.55,
         "ratio": 0.25
       },
       {
         "name": "conference_entrance",
         "position": [9.9, 4, 5],
         "rotation": [0, -90, 0],
-        "scale": [1.71, 1.71, 1.71],
+        "scale": 2.37,
         "ratio": 0.2
       }
     ]
