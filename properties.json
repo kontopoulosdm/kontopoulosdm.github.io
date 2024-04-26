@@ -251,10 +251,10 @@
       "allow": ["all"],
       "conversation": {
         "type": "presentation",
-        "data": [4.0, 16.0, -20.0, -15.2]
+        "data": [5, 22, 16, 22]
       },
       "spatiality": { "type": "room" },
-      "panel": { "type": "fixed", "data": [10, 7.5, -21.3] }
+      "panel": { "type": "fixed", "data": [10, 7.5, 21.3] }
     },
     "map": {
       "allow": ["all"],
