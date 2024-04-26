@@ -31,7 +31,7 @@
       "allow": ["all"],
       "image_ratio": 1,
       "room_size": [10, 10],
-      "scale": 1.5
+      "scale": 1.3
     },
     "tutorial": {
       "allow": ["all"],
@@ -256,7 +256,12 @@
       "spatiality": { "type": "room" },
       "panel": { "type": "fixed", "data": [10, 7.5, -21.3] }
     },
-    "map": { "allow": [] },
+    "map": {
+      "allow": ["all"],
+      "image_ratio": 1.1,
+      "room_size": [20, 22],
+      "scale": 1.3
+    },
     "tutorial": {
       "allow": ["all"],
       "slides": 2,
