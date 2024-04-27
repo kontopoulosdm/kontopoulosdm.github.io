@@ -286,14 +286,14 @@
         "name": "conference_room_r",
         "ratio": 0.25,
         "position": [19.98, 5, 15],
-        "rotation": [0, 90, 0],
+        "rotation": [0, -90, 0],
         "scale": 9.66
       },
       {
         "name": "conference_room_l",
         "ratio": 0.25,
         "position": [0.02, 5, 15],
-        "rotation": [0, -90, 0],
+        "rotation": [0, 90, 0],
         "scale": 9.66
       },
       {
