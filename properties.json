@@ -43,7 +43,9 @@
     },
     "help": {
       "allow": ["all"],
-      "slides": 4,
+      "slides": 8,
+      "nav": [5, 6],
+      "no_nav": [7],
       "ratio": 0.4545
     },
     "labels": [
@@ -187,7 +189,9 @@
     },
     "help": {
       "allow": ["all"],
-      "slides": 4,
+      "slides": 8,
+      "nav": [5, 6],
+      "no_nav": [7],
       "ratio": 0.4545
     },
     "labels": [
@@ -272,7 +276,9 @@
     },
     "help": {
       "allow": ["all"],
-      "slides": 4,
+      "slides": 8,
+      "nav": [5, 6],
+      "no_nav": [7],
       "ratio": 0.4545
     },
     "labels": [
