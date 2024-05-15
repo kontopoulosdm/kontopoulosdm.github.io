@@ -85,7 +85,7 @@
     ],
     "agent": ["8ZQJfxA", "pptdq9h", "SDr5ZWj", "LC6urY7", "2WHssVZ", "rYSLKJH"],
     "translation": {
-      "allow": ["iYxuEsk"],
+      "allow": ["all"],
       "conversation": { "type": "bubble" },
       "spatiality": {
         "type": "room"
