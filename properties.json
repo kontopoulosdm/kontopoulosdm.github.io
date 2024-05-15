@@ -85,11 +85,10 @@
     ],
     "agent": ["8ZQJfxA", "pptdq9h", "SDr5ZWj", "LC6urY7", "2WHssVZ", "rYSLKJH"],
     "translation": {
-      "allow": [],
+      "allow": ["iYxuEsk"],
       "conversation": { "type": "bubble" },
       "spatiality": {
-        "type": "borders",
-        "data": [-13.0, 13.0, -12.0, 2.0]
+        "type": "room"
       },
       "panel": { "type": "avatar" }
     },
