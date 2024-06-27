@@ -98,7 +98,7 @@
       "targets": [
         {
           "name": "conference room",
-          "position": [26.75, 44.5]
+          "position": [26, 44]
         },
         {
           "name": "business room",
@@ -106,20 +106,23 @@
         },
         {
           "name": "social area",
-          "position": [5, 41.5]
+          "position": [5, 41]
         },
-        { "name": "booth 1", "position": [13.5, 17.5] },
+        {
+          "name": "booth 1",
+          "position": [13, 17]
+        },
         {
           "name": "booth 2",
-          "position": [13.5, 12.5]
+          "position": [13, 12]
         },
         {
           "name": "booth 3",
-          "position": [4.5, 12.5]
+          "position": [4, 12]
         },
         {
           "name": "booth 4",
-          "position": [4.5, 17.5]
+          "position": [4, 17]
         }
       ],
       "dimensions": [0, 30, 0, 65],
