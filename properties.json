@@ -176,6 +176,13 @@
           [11, 8.5],
           [11, 11.5]
         ]
+      ],
+      "objects": [
+        { "name": "yellow sphere", "position": [23.5, 11.75] },
+        { "name": "green sphere", "position": [30.0, 3.5] },
+        { "name": "red sphere", "position": [0.0, 55.5] },
+        { "name": "magenta sphere", "position": [30.0, 38.25] },
+        { "name": "blue sphere", "position": [18.0, 38.0] }
       ]
     },
     "map": {
