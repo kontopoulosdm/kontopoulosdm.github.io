@@ -1,835 +1,1127 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="el">
-<head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.css" rel="stylesheet" crossorigin="anonymous">
-    <link href="https://cdn.jsdelivr.net/npm/@digigov/css@0.23.0/dist/digigov.css" rel="stylesheet" crossorigin="anonymous">
-    <link href="/css/theme.css" rel="stylesheet">
-    <link href="/css/font-awesome.css" rel="stylesheet">
-    <link href="/css/govgr_bootstrap.min.css" rel="stylesheet">
-    <link href="/css/landingpage_sh.css" rel="stylesheet">
-    <link href="/css/styles1.css" rel="stylesheet">
-    <link href="/css/header.css" rel="stylesheet">
-    <link href="/css/footer.css" rel="stylesheet">
-    <link href="/css/modal.css" rel="stylesheet">
-    <link href="/css/chipList.css" rel="stylesheet">
-    <link href="/css/chipListItem.css" rel="stylesheet">
-    <link href="/css/qrLabel.css" rel="stylesheet">
-    <link href="/css/imageUploader.css" rel="stylesheet">
-    <link href="/css/selectOneDropdown.css" rel="stylesheet">
-    <link href="/css/notificationMessage.css" rel="stylesheet">
-    <link href="/css/enarksiatomikis.css" rel="stylesheet">
-    <link href="/css/components.css" rel="stylesheet">
-    <script src="/js/jquery.js"></script>
-    <script type="text/javascript" src="/js/bootstrap.bundle.min.js"></script>
-
-    <title>GOV.GR</title>
-</head>
-<script>
-(function (d) { var s = d.createElement("script"); s.setAttribute("data-account", "bzdmrN3BDg"); s.setAttribute("src", "https://cdn.userway.org/widget.js"); (d.body || d.head).appendChild(s); })(document)
-    document.addEventListener("DOMContentLoaded", function () { history.pushState(null,null, "https://dilosi.services.gov.gr/show/F6lmTGVAAvxA4S6qaXwEDA" ); })
-</script>
-<noscript>Please ensure Javascript is enabled for purposes of <a href="https://userway.org">website accessibility</a></noscript>
-<body class="d-flex flex-column">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary py-0">
-        <div class="navbar-content-outer">
-            <div class="navbar-content-inner">
-                <a href="https://www.gov.gr/" target="_blank" class="navbar-brand logo">
-                    <div class="logo_govgr logo_small"></div>
-                    <img alt="Karta Logo" src="/images/epan_logo.svg" />
-                </a>
-                
-                <div class="nav_title">
-                    <a class="nav_title" tabindex="0" role="button" aria-disabled="false" href="/">
-                        <h3 class="nav_title">Κάρτα Αναπηρίας</h3>
-                    </a>
-                </div>
-                <span style="flex: 1 1 auto;"></span>
-                <div class="d-flex">
-                    <div data-toggle="modal" data-target="#privacyModal" role="button" class="text-white mr-5">Δήλωση ιδιωτικότητας</div>
-                    <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" style="color: white;">
-                        <span class="d-none d-md-block">&#x39A;&#x39F;&#x39D;&#x3A4;&#x39F;&#x3A0;&#x39F;&#x3A5;&#x39B;&#x39F;&#x3A3; &#x394;&#x397;&#x39C;&#x397;&#x3A4;&#x3A1;&#x399;&#x39F;&#x3A3;</span>
-                        <span class="material-icons">more_vert</span>
-                    </a>
-                    <div class="dropdown-menu">
-                            <form action="/Identity/Account/Logout?returnUrl=%2F" method="post">
-                                <a class="dropdown-item" href="/">Αρχική</a>
-                                <button type="submit" class="dropdown-item">Έξοδος</button>
-                            <input name="__RequestVerificationToken" type="hidden" value="CfDJ8KM0VELLVTZGuF7fq7ncSKsR1fnkGcZRofPvSPNEX7WjFeC2zMc1tCXfRkV3RKcqvcgL8Q1ZBS0v_WQ1IZOq5wTHzZXDeyA4lHwCszc4FZxi2BMxbtCcvEvgKEyjZYT4FWaPw7pH-1p7zGAjOO4omLW1-bvNDRPuTJjP73tXud3fcmsqthkqbUB11IKR-Dsoxw" /></form>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </nav>
-    <div class="container mt-1">
-        <div class="row">
-            <div class="col mb-2 mb-sm-4">
-                <span class="d-inline-block mt-2">
-                </span>
-            </div>
-        </div>
-    </div>
-    <div id="errorMessagePlaceholder"></div>
-
-    
-
-<style type="text/css">
-    @media (min-width: 1024px) {
-        .govgr-summary-list__key {
-            width: 40%;
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta charset="utf-8" />
+    <link
+      rel="shortcut icon"
+      href="https://government.gov.gr/wp-content/uploads/2017/09/gov_logos-08_16x16_favicon.png"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Δηλώσεις | GOV.GR" />
+    <link
+      rel="apple-touch-icon"
+      href="https://dilosi.services.gov.gr/GOVGR_192.png"
+    />
+    <link rel="manifest" href="https://dilosi.services.gov.gr/manifest.json" />
+    <style>
+      /* ! tailwindcss v3.3.5 | MIT License | https://tailwindcss.com */
+      *,
+      ::before,
+      ::after {
+        box-sizing: border-box;
+        border-width: 0;
+        border-style: solid;
+        border-color: currentColor;
+      }
+      ::before,
+      ::after {
+      }
+      html {
+        line-height: 1.5;
+        -webkit-text-size-adjust: 100%;
+        tab-size: 4;
+        font-family: Roboto, ui-sans-serif, system-ui, -apple-system,
+          BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,
+          "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+          "Segoe UI Symbol", "Noto Color Emoji";
+        font-feature-settings: normal;
+        font-variation-settings: normal;
+      }
+      body {
+        margin: 0;
+        line-height: inherit;
+      }
+      hr {
+        height: 0;
+        color: inherit;
+        border-top-width: 1px;
+      }
+      a {
+        color: inherit;
+        text-decoration: inherit;
+      }
+      small {
+        font-size: 80%;
+      }
+      button {
+        font-family: inherit;
+        font-feature-settings: inherit;
+        font-variation-settings: inherit;
+        font-size: 100%;
+        font-weight: inherit;
+        line-height: inherit;
+        color: inherit;
+        margin: 0;
+        padding: 0;
+        text-transform: none;
+        -webkit-appearance: button;
+        background-color: transparent;
+        background-image: none;
+      }
+      ::-webkit-inner-spin-button,
+      ::-webkit-outer-spin-button {
+        height: auto;
+      }
+      ::-webkit-search-decoration {
+        -webkit-appearance: none;
+      }
+      ::-webkit-file-upload-button {
+        -webkit-appearance: button;
+        font: inherit;
+      }
+      hr {
+        margin: 0;
+      }
+      button,
+      [role="button"] {
+        cursor: pointer;
+      }
+      img,
+      svg {
+        display: block;
+        vertical-align: middle;
+      }
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+      *,
+      :after,
+      :before {
+        box-sizing: border-box;
+        border: 0 solid;
+      }
+      :after,
+      :before {
+      }
+      html {
+        line-height: 1.5;
+        -webkit-text-size-adjust: 100%;
+        tab-size: 4;
+        font-family: Roboto, ui-sans-serif, system-ui, -apple-system,
+          BlinkMacSystemFont, Segoe UI, Helvetica Neue, Arial, Noto Sans,
+          sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol,
+          Noto Color Emoji;
+        font-feature-settings: normal;
+        font-variation-settings: normal;
+        -webkit-tap-highlight-color: transparent;
+        scroll-behavior: smooth;
+      }
+      body {
+        margin: 0;
+        line-height: inherit;
+        --tw-bg-opacity: 1;
+        background-color: rgba(var(--color-base-100-rgb), var(--tw-bg-opacity));
+        font-family: Roboto, ui-sans-serif, system-ui, -apple-system,
+          BlinkMacSystemFont, Segoe UI, Helvetica Neue, Arial, Noto Sans,
+          sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol,
+          Noto Color Emoji;
+        --tw-text-opacity: 1;
+        color: rgba(var(--color-base-content-rgb), var(--tw-text-opacity));
+      }
+      hr {
+        height: 0;
+        color: inherit;
+        border-top-width: 1px;
+      }
+      a {
+        color: inherit;
+        text-decoration: inherit;
+      }
+      small {
+        font-size: 80%;
+      }
+      button {
+        font-family: inherit;
+        font-feature-settings: inherit;
+        font-variation-settings: inherit;
+        font-size: 100%;
+        font-weight: inherit;
+        line-height: inherit;
+        color: inherit;
+        margin: 0;
+        padding: 0;
+        text-transform: none;
+        -webkit-appearance: button;
+        background-color: transparent;
+        background-image: none;
+      }
+      ::-webkit-inner-spin-button,
+      ::-webkit-outer-spin-button {
+        height: auto;
+      }
+      ::-webkit-search-decoration {
+        -webkit-appearance: none;
+      }
+      ::-webkit-file-upload-button {
+        -webkit-appearance: button;
+        font: inherit;
+      }
+      hr {
+        margin: 0;
+      }
+      [role="button"],
+      button {
+        cursor: pointer;
+      }
+      img,
+      svg {
+        display: block;
+        vertical-align: middle;
+      }
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+      :after,
+      :before,
+      :root {
+        --color-gray-400-rgb: 179, 178, 181;
+        --color-primary-100-rgb: 31, 72, 132;
+        --color-primary: #003375;
+        --color-primary-rgb: 0, 51, 117;
+        --color-tertiary: #0065b3;
+        --color-tertiary-rgb: 0, 101, 179;
+        --color-base-100-rgb: 254, 254, 254;
+        --color-base-200: #ecebec;
+        --color-base-300-rgb: 205, 204, 206;
+        --color-base-400-rgb: 179, 178, 181;
+        --color-base-800: #515058;
+        --color-base-content-rgb: 37, 40, 48;
+        --color-accent: #252830;
+        --color-focus: #fd0;
+        --color-white: #fefefe;
+        --color-white-rgb: 254, 254, 254;
+        --color-header-text: var(--color-white);
+        --color-header-text-hover: var(--color-white);
+      }
+      @media (min-width: 0px) {
+        .ds-footer {
+          --footer-border: solid var(--color-tertiary);
+          --footer-border-width: 4px 0 0 0;
+          --footer-background-color: var(--color-base-200);
+          --footer-color: var(--color-base-800);
         }
-
-        .govgr-label-blue {
-            color: #046ec5 !important;
-            margin-bottom: 20px;
-            font-weight: bold
+        .ds-header {
+          --header-border: solid var(--color-tertiary);
+          --header-border-width: 0 0 8px 0;
+          --header-background: var(--color-primary);
         }
-    }
-</style>
+        .ds-header__title {
+          --header__title-color: var(--color-header-text);
+          --header__title-color-hover: var(--color-header-text-hover);
+        }
+      }
+      ::backdrop {
+      }
+      :root {
+        accent-color: var(--color-accent);
+      }
+      *,
+      ::before,
+      ::after {
+      }
+      ::backdrop {
+      }
+      .ds-admin-header {
+        border-bottom-width: 8px;
+        --tw-border-opacity: 1;
+        border-color: rgba(var(--color-tertiary-rgb), var(--tw-border-opacity));
+        --tw-bg-opacity: 1;
+        background-color: rgba(var(--color-primary-rgb), var(--tw-bg-opacity));
+        border-bottom-style: solid;
+      }
+      .ds-admin-header__content {
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        width: 100%;
+        max-width: 100%;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        gap: 0.75rem;
+        padding: 0.5rem 1rem;
+      }
+      .ds-admin-layout-wrapper {
+        display: flex;
+        flex-flow: column wrap;
+        min-height: 100vh;
+      }
+      .ds-footer {
+        border: var(--footer-border);
+        border-width: var(--footer-border-width);
+        background-color: var(--footer-background-color);
+        color: var(--footer-color);
+        width: 100%;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        font-weight: 400;
+      }
+      .ds-footer__info {
+        box-sizing: border-box;
+        display: flex;
+        width: 100%;
+        flex: 1 1 0%;
+        flex-wrap: wrap;
+        align-items: flex-end;
+        justify-content: center;
+      }
+      .ds-footer__info-section {
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+        margin-bottom: 1.5rem;
+      }
+      .ds-footer__content {
+        width: 100%;
+      }
+      .ds-footer__government-logo {
+        display: block;
+        height: auto;
+        width: 13rem;
+        min-width: 13rem;
+        max-width: 100%;
+      }
+      .ds-header {
+        position: relative;
+        border-bottom-width: 8px;
+        --tw-border-opacity: 1;
+        border-color: rgba(var(--color-tertiary-rgb), var(--tw-border-opacity));
+        background: var(--header-background);
+        border: var(--header-border);
+        border-width: var(--header-border-width);
+      }
+      .ds-header__content {
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        width: 100%;
+        max-width: 64rem;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        gap: 0.75rem;
+        padding: 0.5rem 1rem;
+      }
+      .ds-header__section {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: flex-start;
+        column-gap: 1rem;
+        row-gap: 0.5rem;
+      }
+      .ds-header__section:last-child:not(:first-child) {
+        flex: 1 1 0%;
+        justify-content: flex-end;
+      }
+      .ds-header__logo {
+        height: 3rem;
+        print-color-adjust: exact !important;
+        -webkit-print-color-adjust: exact !important;
+      }
+      .ds-header__title {
+        width: auto;
+        vertical-align: middle;
+        font-size: 1.5rem;
+        font-weight: 700;
+        line-height: 2.5rem;
+        letter-spacing: 0.025em;
+        text-decoration-line: none;
+        color: var(--header__title-color);
+      }
+      .ds-header__title:hover {
+        text-decoration-line: none;
+        color: var(--header__title-color-hover);
+      }
+      .ds-header__title:focus {
+        text-decoration: none;
+        outline: 4px solid var(--color-focus) !important;
+        outline-offset: 4px;
+      }
+      .ds-header .ds-header__content > .ds-skeleton,
+      .ds-header .ds-header__section > .ds-skeleton {
+        width: 20rem;
+        max-width: 20rem;
+        --tw-bg-opacity: 1;
+        background-color: rgba(
+          var(--color-primary-100-rgb),
+          var(--tw-bg-opacity)
+        );
+      }
+      .ds-header .ds-header__content > .ds-skeleton.ds-skeleton--animate:after,
+      .ds-header .ds-header__section > .ds-skeleton.ds-skeleton--animate:after {
+        background: linear-gradient(
+          90deg,
+          transparent,
+          hsla(0, 0%, 100%, 0.05),
+          transparent
+        );
+      }
+      .ds-layout {
+        display: flex;
+        flex-flow: column wrap;
+      }
+      .ds-layout.ds-layout--full-height {
+        min-height: 100vh;
+      }
+      .ds-container {
+        margin-left: auto;
+        margin-right: auto;
+        box-sizing: border-box;
+        width: 100%;
+        max-width: 64rem;
+        padding-left: 0.75rem;
+        padding-right: 0.75rem;
+        flex: 1 1 0%;
+      }
+      .ds-container.ds-container--full-width {
+        max-width: 100%;
+      }
+      .ds-top {
+        margin-bottom: 1rem;
+      }
+      .ds-aside {
+        display: flex;
+        height: -moz-fit-content;
+        height: -webkit-fit-content;
+        height: fit-content;
+        flex-direction: column;
+        flex-wrap: wrap;
+      }
+      .ds-section-break {
+        margin: auto;
+        width: 100%;
+        border-width: 0;
+        background-color: transparent;
+        padding: 0.5rem 1rem;
+      }
+      .ds-section-break.ds-section-break--visible {
+        --tw-border-opacity: 1;
+        border-color: rgba(var(--color-base-300-rgb), var(--tw-border-opacity));
+        border-top: 1px
+          rgba(var(--color-base-300-rgb), var(--tw-border-opacity));
+        border-style: solid;
+      }
+      .ds-container.ds-grid {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+      }
+      @keyframes dash {
+        0% {
+          stroke-dashoffset: 0;
+        }
+        40% {
+          stroke-dashoffset: var(--full-length);
+        }
+        50% {
+          stroke-dashoffset: var(--full-length);
+        }
+        90% {
+          stroke-dashoffset: 0;
+        }
+        to {
+          stroke-dashoffset: 0;
+        }
+      }
+      @keyframes rotate {
+        to {
+          transform: rotate(1turn);
+        }
+      }
+      .ds-skeleton {
+        display: block;
+        height: auto;
+        width: 100%;
+        max-width: 100%;
+        border-radius: 0.125rem;
+        --tw-bg-opacity: 1;
+        background-color: rgba(var(--color-base-300-rgb), var(--tw-bg-opacity));
+      }
+      .ds-skeleton.ds-skeleton--text:before {
+        content: "\00a0";
+        visibility: hidden;
+      }
+      .ds-skeleton.ds-skeleton--text.ds-skeleton--font-lg {
+        margin-bottom: 1.5rem;
+        font-size: 1.5rem;
+        line-height: 2rem;
+      }
+      .ds-skeleton.ds-skeleton--text.ds-skeleton--font-xl {
+        margin-bottom: 2rem;
+        font-size: 1.875rem;
+        line-height: 2.25rem;
+      }
+      .ds-skeleton.ds-skeleton--button {
+        margin-bottom: 2rem;
+        display: flex;
+        min-height: 2.5rem;
+        width: -moz-fit-content;
+        width: -webkit-fit-content;
+        width: fit-content;
+        align-items: center;
+        justify-content: center;
+        border-bottom-width: 2px;
+        --tw-border-opacity: 1;
+        border-color: rgba(var(--color-gray-400-rgb), var(--tw-border-opacity));
+        padding: 0.75rem 1.5rem;
+      }
+      .ds-skeleton.ds-skeleton--button .ds-skeleton__line {
+        visibility: visible;
+        display: block;
+        max-height: 100%;
+        width: 100%;
+        max-width: 100%;
+        --tw-bg-opacity: 1;
+        background-color: rgba(var(--color-base-400-rgb), var(--tw-bg-opacity));
+      }
+      .ds-skeleton.ds-skeleton--button .ds-skeleton__line:before {
+        content: "\00a0";
+      }
+      .ds-skeleton.ds-skeleton--button
+        .ds-skeleton__line.ds-skeleton__line--size-default {
+        height: 1rem;
+        width: 5rem;
+      }
+      .ds-skeleton.ds-skeleton--animate {
+        position: relative;
+        overflow: hidden;
+        -webkit-mask-image: radial-gradient(#fff, #000);
+        mask-image: radial-gradient(#fff, #000);
+      }
+      .ds-skeleton.ds-skeleton--animate:after {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        animation: wave 2s linear 0.5s infinite;
+        background: linear-gradient(
+          90deg,
+          transparent,
+          rgba(0, 0, 0, 0.05),
+          transparent
+        );
+        content: "";
+        transform: translateX(-100%);
+      }
+      .ds-skeleton > * {
+        visibility: hidden;
+      }
+      @keyframes wave {
+        0% {
+          transform: translateX(-100%);
+        }
+        50% {
+          transform: translateX(100%);
+        }
+        to {
+          transform: translateX(100%);
+        }
+      }
+      @media (min-width: 768px) {
+        .ds-admin-main {
+          grid-column: span 7 / span 7;
+        }
+        .ds-admin-aside {
+          grid-column: span 5 / span 5;
+        }
+        .ds-footer {
+          padding-top: 2rem;
+          padding-bottom: 2rem;
+        }
+        .ds-footer__info {
+          flex-wrap: nowrap;
+          justify-content: space-between;
+        }
+        .ds-footer__info-section {
+          margin-left: 1rem;
+          margin-right: 1rem;
+        }
+        .ds-container {
+          padding-left: 1.5rem;
+          padding-right: 1.5rem;
+        }
+        .ds-aside {
+          top: 2rem;
+        }
+        .ds-aside.ds-aside--sticky {
+          position: -webkit-sticky;
+          position: sticky;
+        }
+        .ds-skeleton.ds-skeleton--text.ds-skeleton--font-lg {
+          margin-bottom: 1.75rem;
+          font-size: 1.875rem;
+          line-height: 2.25rem;
+        }
+        .ds-skeleton.ds-skeleton--text.ds-skeleton--font-xl {
+          margin-bottom: 2.5rem;
+          font-size: 2.25rem;
+          line-height: 2.5rem;
+        }
+        .ds-skeleton.ds-skeleton--button {
+          min-height: 3rem;
+        }
+      }
+      @media print {
+        .ds-admin-header {
+          border-bottom-width: 2px;
+          --tw-bg-opacity: 1;
+          background-color: rgba(var(--color-white-rgb), var(--tw-bg-opacity));
+        }
+        .ds-admin-header__content {
+          padding-left: 0;
+          padding-right: 0;
+        }
+        .ds-admin-aside {
+          order: 1;
+        }
+        .ds-footer {
+          border-top-width: 2px;
+          --tw-bg-opacity: 1;
+          background-color: rgba(var(--color-white-rgb), var(--tw-bg-opacity));
+          padding-top: 0.5rem;
+          padding-bottom: 0.5rem;
+        }
+        .ds-footer__info-section {
+          margin-bottom: 1rem;
+        }
+        .ds-footer .ds-section-break {
+          display: none;
+        }
+        .ds-header {
+          border-bottom-width: 2px;
+          --tw-bg-opacity: 1;
+          background-color: rgba(var(--color-white-rgb), var(--tw-bg-opacity));
+        }
+        .ds-header__content {
+          padding-left: 0;
+          padding-right: 0;
+        }
+        .ds-header__section {
+          gap: 0.25rem;
+        }
+        .ds-header__logo {
+          display: none;
+        }
+        .ds-header__title {
+          --tw-text-opacity: 1;
+          color: rgba(var(--color-base-content-rgb), var(--tw-text-opacity));
+        }
+        .ds-aside {
+          order: 1;
+        }
+        .ds-container.ds-grid {
+          grid-template-columns: repeat(1, minmax(0, 1fr));
+          gap: 1rem;
+        }
+      }
+      @media (min-width: 640px) {
+        .ds-admin-header__content {
+          flex-wrap: nowrap;
+        }
+        .ds-header__content {
+          flex-wrap: nowrap;
+        }
+        .ds-header__section:last-child:not(:first-child) {
+          flex: none;
+          justify-content: flex-start;
+        }
+      }
+      @media (min-width: 1024px) {
+        .ds-admin-main {
+          grid-column: span 8 / span 8;
+        }
+        .ds-admin-aside {
+          grid-column: span 4 / span 4;
+        }
+      }
+      @media (min-width: 0px) and (max-width: 639.98px) {
+        .ds-hidden-xs {
+          display: none;
+        }
+      }
+      .visible {
+        visibility: visible;
+      }
+      .ds-mb-2 {
+        margin-bottom: 0.5rem !important;
+      }
+      .ds-mb-4 {
+        margin-bottom: 1rem !important;
+      }
+      .ds-mb-10 {
+        margin-bottom: 2.5rem !important;
+      }
+      .ds-grid {
+        display: grid;
+        grid-template-columns: repeat(12, minmax(0, 1fr));
+      }
+      @media (min-width: 640px) {
+        .ds-gap-sm-12 {
+          gap: 3rem;
+        }
+      }
+      @media (min-width: 0px) {
+        .xs\:ds-grid__col-span-12 {
+          grid-column: span 12 / span 12;
+        }
+      }
+      @media (min-width: 768px) {
+        .md\:ds-grid__col-span-4 {
+          grid-column: span 4 / span 4;
+        }
+        .md\:ds-grid__col-span-8 {
+          grid-column: span 8 / span 8;
+        }
+      }
+      @media (min-width: 1024px) {
+        .lg\:ds-grid__col-span-2 {
+          grid-column: span 2 / span 2;
+        }
+        .lg\:ds-grid__col-span-10 {
+          grid-column: span 10 / span 10;
+        }
+      }
+    </style>
+    <title>Κάρτα Αναπηρίας - Έκδοση Κάρτας Αναπηρίας GOV.GR</title>
+    <link rel="stylesheet" crossorigin="" href="/css/index-DRXSEyKU.css" />
+    <style id="_goober">
+      .go1475592160 {
+        height: 0;
+      }
+      .go1671063245 {
+        height: auto;
+      }
+      .go1888806478 {
+        display: flex;
+        flex-wrap: wrap;
+        flex-grow: 1;
+      }
+      @media (min-width: 600px) {
+        .go1888806478 {
+          flex-grow: initial;
+          min-width: 288px;
+        }
+      }
+      .go167266335 {
+        background-color: #313131;
+        font-size: 0.875rem;
+        line-height: 1.43;
+        letter-spacing: 0.01071em;
+        color: #fff;
+        align-items: center;
+        padding: 6px 16px;
+        border-radius: 4px;
+        box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2),
+          0px 6px 10px 0px rgba(0, 0, 0, 0.14),
+          0px 1px 18px 0px rgba(0, 0, 0, 0.12);
+      }
+      .go3162094071 {
+        padding-left: 20px;
+      }
+      .go3844575157 {
+        background-color: #313131;
+      }
+      .go1725278324 {
+        background-color: #43a047;
+      }
+      .go3651055292 {
+        background-color: #d32f2f;
+      }
+      .go4215275574 {
+        background-color: #ff9800;
+      }
+      .go1930647212 {
+        background-color: #2196f3;
+      }
+      .go946087465 {
+        display: flex;
+        align-items: center;
+        padding: 8px 0;
+      }
+      .go703367398 {
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+        padding-left: 16px;
+        margin-right: -8px;
+      }
+      .go3963613292 {
+        width: 100%;
+        position: relative;
+        transform: translateX(0);
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        min-width: 288px;
+      }
+      .go1141946668 {
+        box-sizing: border-box;
+        display: flex;
+        max-height: 100%;
+        position: fixed;
+        z-index: 1400;
+        height: auto;
+        width: auto;
+        transition: top 300ms ease 0ms, right 300ms ease 0ms,
+          bottom 300ms ease 0ms, left 300ms ease 0ms, max-width 300ms ease 0ms;
+        pointer-events: none;
+        max-width: calc(100% - 40px);
+      }
+      .go1141946668 .notistack-CollapseWrapper {
+        padding: 6px 0px;
+        transition: padding 300ms ease 0ms;
+      }
+      @media (max-width: 599.95px) {
+        .go1141946668 {
+          width: 100%;
+          max-width: calc(100% - 32px);
+        }
+      }
+      .go3868796639 .notistack-CollapseWrapper {
+        padding: 2px 0px;
+      }
+      .go3118922589 {
+        top: 14px;
+        flex-direction: column;
+      }
+      .go1453831412 {
+        bottom: 14px;
+        flex-direction: column-reverse;
+      }
+      .go4027089540 {
+        left: 20px;
+      }
+      @media (min-width: 600px) {
+        .go4027089540 {
+          align-items: flex-start;
+        }
+      }
+      @media (max-width: 599.95px) {
+        .go4027089540 {
+          left: 16px;
+        }
+      }
+      .go2989568495 {
+        right: 20px;
+      }
+      @media (min-width: 600px) {
+        .go2989568495 {
+          align-items: flex-end;
+        }
+      }
+      @media (max-width: 599.95px) {
+        .go2989568495 {
+          right: 16px;
+        }
+      }
+      .go4034260886 {
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      @media (min-width: 600px) {
+        .go4034260886 {
+          align-items: center;
+        }
+      }
+    </style>
 
-<div class="govgr-layout-wrapper">
-    <div class="govgr-width-container">
-        <div class="govgr-main-wrapper" style="display: block;">
-            <main class="govgr-grid-column-two-thirds">
-                <a class="govgr-back-link" href="/Card/Main">
-                    <svg class="govgr-caret--left" viewBox="0 0 24 24" aria-hidden="true"><path d="M18,22V2L6,12L18,22z" /></svg>
-                    Πίσω
+    <meta name="robots" content="noindex" data-react-helmet="true" />
+  </head>
+  <body class="print-section-container print-section-default-container">
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root">
+      <link rel="stylesheet" href="/css/icon.css" />
+      <link rel="stylesheet" href="/css/css.css" />
+      <div class="ds-layout ds-layout--full-height">
+        <div class="ds-top">
+          <header class="ds-header" role="banner">
+            <div class="ds-header__content">
+              <div class="ds-header__section">
+                <a class="ds-header__link" href="https://www.gov.gr/">
+                  <img
+                    src="/images/lalala_logo.svg"
+                    class="ds-header__logo"
+                    alt="gov.gr logo"
+                  />
                 </a>
-                <h1 class="govgr-heading-xl">Στοιχεία Κάρτας Αναπηρίας</h1>
-
-                 <div class="govgr-button-group">
-                    <a class="govgr-btn-primary govgr-btn" target="_blank" style="display:inline-block" href="/Card/GetPdfFile">Λήψη Κάρτας (PDF)</a>
-                    <button data-toggle="modal" data-target="#epikairopoiisiModal" class="govgr-btn-secondary govgr-btn" style="display:inline-block">Επικαιροποίηση στοιχείων Κάρτας</button>
-                    <button data-toggle="modal" data-target="#cancelModal" class="govgr-btn-secondary govgr-btn" style="display:inline-block">Ακύρωση Κάρτας</button>
+                <a
+                  class="ds-header__title"
+                  href="https://dilosi.services.gov.gr/validate/govgr"
+                  >Επαλήθευση εγγράφου</a
+                >
+              </div>
+            </div>
+          </header>
+        </div>
+        <div class="ds-container" withrole="main">
+          <div class="ds-grid">
+            <div class="xs:ds-grid__col-span-12 md:ds-grid__col-span-12">
+              <form id="form-1" name="form-1" aria-label="form-1">
+                <div class="ds-grid">
+                  <div class="xs:ds-grid__col-span-12">
+                    <div class="ds-grid ds-gap-6">
+                      <div
+                        class="xs:ds-grid__col-span-12 md:ds-grid__col-span-8"
+                      >
+                        <div class="xs:ds-mt-5 md:ds-mt-10">
+                          <div
+                            style="
+                              display: flex;
+                              justify-content: space-between;
+                              flex-wrap: wrap;
+                              min-height: 19px;
+                            "
+                          >
+                            <span class="ds-caption-xl">Κάρτα Αναπηρίας</span>
+                          </div>
+                          <h1 class="ds-heading-xl">Έκδοση Κάρτας Αναπηρίας</h1>
+                        </div>
+                        <h3 class="ds-heading-md">
+                          <span class="">Στοιχεία Κάρτας Αναπηρίας</span>
+                        </h3>
+                        <dl class="ds-summary-list">
+                          <div class="ds-summary-list__row" data-testid="user">
+                            <dt class="list-label w-1/2 ds-summary-list__key">
+                              <span>Φωτογραφία</span>
+                            </dt>
+                            <dd
+                              class="w-1/2 ds-summary-list__value"
+                              xs="12"
+                              sm="6"
+                            >
+                              <div>
+                                <img
+                                  alt='Φωτογραφία πεδίου "Φωτογραφία".'
+                                  src="/images/photo.jpeg"
+                                  attachment_retrieval="content"
+                                />
+                              </div>
+                            </dd>
+                          </div>
+                          <div class="ds-summary-list__row" data-testid="user">
+                            <dt class="list-label w-1/2 ds-summary-list__key">
+                              <span>Όνομα</span>
+                            </dt>
+                            <dd
+                              class="w-1/2 ds-summary-list__value"
+                              xs="12"
+                              sm="6"
+                            >
+                              ΔΗΜΗΤΡΙΟΣ
+                            </dd>
+                          </div>
+                          <div class="ds-summary-list__row" data-testid="user">
+                            <dt class="list-label w-1/2 ds-summary-list__key">
+                              <span>Επώνυμο</span>
+                            </dt>
+                            <dd
+                              class="w-1/2 ds-summary-list__value"
+                              xs="12"
+                              sm="6"
+                            >
+                              ΚΟΝΤΟΠΟΥΛΟΣ
+                            </dd>
+                          </div>
+                          <div class="ds-summary-list__row" data-testid="user">
+                            <dt class="list-label w-1/2 ds-summary-list__key">
+                              <span>Όνομα Πατρός</span>
+                            </dt>
+                            <dd
+                              class="w-1/2 ds-summary-list__value"
+                              xs="12"
+                              sm="6"
+                            >
+                              ΚΩΝΣΤΑΝΤΙΝΟΣ
+                            </dd>
+                          </div>
+                          <div class="ds-summary-list__row" data-testid="user">
+                            <dt class="list-label w-1/2 ds-summary-list__key">
+                              <span>Ημερομηνία Γέννησης</span>
+                            </dt>
+                            <dd
+                              class="w-1/2 ds-summary-list__value"
+                              xs="12"
+                              sm="6"
+                            >
+                              05/11/1998
+                            </dd>
+                          </div>
+                          <div class="ds-summary-list__row" data-testid="user">
+                            <dt class="list-label w-1/2 ds-summary-list__key">
+                              <span>Κλιμάκιο Αναπηρίας</span>
+                            </dt>
+                            <dd
+                              class="w-1/2 ds-summary-list__value"
+                              xs="12"
+                              sm="6"
+                            >
+                              III
+                            </dd>
+                          </div>
+                          <div class="ds-summary-list__row" data-testid="user">
+                            <dt class="list-label w-1/2 ds-summary-list__key">
+                              <span>Χρειάζεται Συνοδό</span>
+                            </dt>
+                            <dd
+                              class="w-1/2 ds-summary-list__value"
+                              xs="12"
+                              sm="6"
+                            ></dd>
+                          </div>
+                          <div class="ds-summary-list__row" data-testid="user">
+                            <dt class="list-label w-1/2 ds-summary-list__key">
+                              <span>Χρειάζεται Συνοδό</span>
+                            </dt>
+                            <dd
+                              class="w-1/2 ds-summary-list__value"
+                              xs="12"
+                              sm="6"
+                            ></dd>
+                          </div>
+                          <div class="ds-summary-list__row" data-testid="user">
+                            <dt class="list-label w-1/2 ds-summary-list__key">
+                              <span>Ημερομηνία Λήξης</span>
+                            </dt>
+                            <dd
+                              class="w-1/2 ds-summary-list__value"
+                              xs="12"
+                              sm="6"
+                            >
+                              30/12/2025
+                            </dd>
+                          </div>
+                          <div class="ds-summary-list__row" data-testid="user">
+                            <dt class="list-label w-1/2 ds-summary-list__key">
+                              <span>Κωδικός Κάρτας</span>
+                            </dt>
+                            <dd
+                              class="w-1/2 ds-summary-list__value"
+                              xs="12"
+                              sm="6"
+                            >
+                              1a901a6c-c7fd-4132-88c9-b3a66e108fd2
+                            </dd>
+                          </div>
+                        </dl>
+                      </div>
+                      <div
+                        class="xs:ds-grid__col-span-12 md:ds-grid__col-span-4"
+                      >
+                        <div class="border-8 border-black inline-block mb-2">
+                          <canvas
+                            style="height: 180px; width: 180px"
+                            height="180"
+                            width="180"
+                            data="/images/qrcode.png"
+                            class="border-8 border-white mb-0"
+                            aria-label="QR code σύνδεσμος προς την παρούσα δήλωση"
+                          ></canvas>
+                        </div>
+                        <div class="xs:ds-grid__col-span-true ds-mb-8">
+                          <h4 class="ds-heading-sm ds-mb-1">
+                            Κωδικός επαλήθευσης
+                          </h4>
+                          <p class="ds-body ds-mb-4">F6lmTGVAAvxA4S6qaXwEDA</p>
+                        </div>
+                        <div class="xs:ds-grid__col-span-true ds-mb-8">
+                          <h4 class="ds-heading-sm ds-mb-1">Κατάσταση</h4>
+                          <p class="ds-body">Το έγγραφο εκδόθηκε</p>
+                        </div>
+                        <div class="xs:ds-grid__col-span-true ds-mb-8">
+                          <h4 class="ds-heading-sm ds-mb-1">Πρότυπο</h4>
+                          <p class="ds-body ds-mb-4">GOV-WALLET-AMEA-CARD</p>
+                        </div>
+                        <div class="xs:ds-grid__col-span-true ds-mb-8">
+                          <h4 class="ds-heading-sm ds-mb-1">
+                            Ημερομηνία έκδοσης εγγράφου gov.gr
+                          </h4>
+                          <p class="ds-body">04/05/2024 08:10:22</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-               
-                <p class="govgr-body">Τα ακόλουθα στοιχεία προκύπτουν από διαλειτουργική άντλησή τους. Εάν διαφωνείτε με κάποιο από αυτά, δείτε περισσότερες πληροφορίες <a class="govgr-link" target="_blank" href="/Card/CardInfo">εδώ</a>.</p>
-                <label class="govgr-label govgr-label-blue">Γενικά στοιχεία:</label>
-                <dl class="govgr-summary-list">
-                    <div class="govgr-summary-list__row">
-                        <dt class="govgr-summary-list__key">
-                            Όνομα
-                        </dt>
-                        <dd class="govgr-summary-list__value">
-                            &#x394;&#x397;&#x39C;&#x397;&#x3A4;&#x3A1;&#x399;&#x39F;&#x3A3;
-                        </dd>
-                    </div>
-                    <div class="govgr-summary-list__row">
-                        <dt class="govgr-summary-list__key">
-                            Επώνυμο
-                        </dt>
-                        <dd class="govgr-summary-list__value">
-                            &#x39A;&#x39F;&#x39D;&#x3A4;&#x39F;&#x3A0;&#x39F;&#x3A5;&#x39B;&#x39F;&#x3A3;
-                        </dd>
-                    </div>
-                    <div class="govgr-summary-list__row">
-                        <dt class="govgr-summary-list__key">
-                            Όνομα Λατινικά
-                        </dt>
-                        <dd class="govgr-summary-list__value">
-                            DIMITRIOS
-                        </dd>
-                    </div>
-                    <div class="govgr-summary-list__row">
-                        <dt class="govgr-summary-list__key">
-                            Επώνυμο Λατινικά
-                        </dt>
-                        <dd class="govgr-summary-list__value">
-                            KONTOPOULOS
-                        </dd>
-                    </div>
-                    <div class="govgr-summary-list__row">
-                        <dt class="govgr-summary-list__key">
-                            Πατρώνυμο
-                        </dt>
-                        <dd class="govgr-summary-list__value">
-                            &#x39A;&#x3A9;&#x39D;&#x3A3;&#x3A4;&#x391;&#x39D;&#x3A4;&#x399;&#x39D;&#x39F;&#x3A3;
-                        </dd>
-                    </div>
-                    <div class="govgr-summary-list__row">
-                        <dt class="govgr-summary-list__key">
-                            Μητρώνυμο
-                        </dt>
-                        <dd class="govgr-summary-list__value">
-                            &#x391;&#x394;&#x391;&#x39C;&#x391;&#x39D;&#x3A4;&#x399;&#x391;
-                        </dd>
-                    </div>
-                    <div class="govgr-summary-list__row">
-                        <dt class="govgr-summary-list__key">
-                            ΑΦΜ
-                        </dt>
-                        <dd class="govgr-summary-list__value">
-                            170904821
-                        </dd>
-                    </div>
-                    <div class="govgr-summary-list__row">
-                        <dt class="govgr-summary-list__key">
-                            ΑΜΚΑ
-                        </dt>
-                        <dd class="govgr-summary-list__value">
-                            05119802733
-                        </dd>
-                    </div>
-                    <div class="govgr-summary-list__row">
-                        <dt class="govgr-summary-list__key">
-                            Ημερομηνία Γέννησης
-                        </dt>
-                        <dd class="govgr-summary-list__value">
-                            05/11/1998
-                        </dd>
-                    </div>
-                    <div class="govgr-summary-list__row">
-                        <dt class="govgr-summary-list__key">
-                            Φωτογραφία
-                        </dt>
-                        <dd class="govgr-summary-list__value">
-                            <img src="data:image/png;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAD3ANcDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4&#x2B;Tl5ufo6erx8vP09fb3&#x2B;Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3&#x2B;Pn6/9oADAMBAAIRAxEAPwDs6KKKsBaKSigBaKKqahqVrplq1xdyrGg4Ge59BSGW6zdS1vT9JhMl7dpEMEhT95voK868RfEq4ljlt9MRIwcr5uSzY9Qen5ZrgjPLcyPPczNLKRyznJpOQJHW618Q9S1K9xZu1nbKSECY3H3Y&#x2B;v0ribu8kmmeSR2d2OSWOST6k96kbAlOWAA6ZqlKGBxj5eoIOcio3K2JrZmmlVB3PWrNywAMYc9MKe1UoEYnK5HuKkuEkZlOQqqABQHQiDHfjcCamWMucq6AgdM4NVTtzj/x496Fcg88j2piuaoiAg80Esc4YDjHvTQ&#x2B;5MjOBUEb7SdjEEdDnGah8xzICpA56Dp&#x2B;VIq5eb7QUEjnjsD1q9B4p1i2dMalcsqDAUyEjHpg8VjpMFk3bWHrzRI8RzhSp9jxQJ6npmgfEG7LxQ6i0UkZ48xyVb8xn9a9F07ULXU7YTW0u5R1XIyv1xXzWkhDYH0rf0LUnt5smR4jj5ZY&#x2B;GU&#x2B;p9R7VSZNj6ByOlLXO&#x2B;GddGsWESyyB7lB87DgOMkbh/h2/EVvgnGevrVCH0UlFAC0lFFMAooopALRRRQMKKKKBGbrms2&#x2B;h6e11OcsfljjB5dvQV4l4h8RXmt3ZmupsqPuRrwqD0H&#x2B;NbHxE14XutvbQOHigXy9w7HPzY/x9q4fdvbHU54FS2UhXf2/GnJMFi5AJPApuze2N3HcipZxFF8qxtnH3m/wqRoryTHocHnmniPdFnaVGOG7GpLa1a43PuCqOpapndY42VApPTcRQNIrIDGy4J49KV90uAck9OAOaQEEbnl57ADOaGlU4O0AjjIGM0AQPAythgVPvTNuDmrTSmVhkn05PSgIBnGCPUmi4rEQLtyqIcc5xSrOm/c0KgjuuR&#x2B;NWYBGwO5sEnGMcVHLbZYqrLuB6etAWJoLdLols4HtzVSWFA5Cq&#x2B;Aeec03bLbSMCpQjqDxTjG7KJImJzyRTAeIwi5Cn&#x2B;tSM5VQAQOvSqwklLcMxI7d6e85MXTnJznrSA6Tw/r9zp1zbIsiKiuchj1BHP4dPyr2TStXtryMmK4ilUHkxtkCvnoy4iQqMOOD71s6J4qvtHZTEIincMO3pVJks&#x2B;ggeAPSlrnPDPiKDWrRQhxLGAHXPXiuiHTpj2qhC0UUlMBaKSikAtFFFABWN4q1J9L8O3dxEcS7NqH0J4z&#x2B;Ga2Cew61yvxBKr4Uud3LMVx9Q2aGM8QlZpHbJJy3506UJEyheCo7dzQVClGqOUgvgcc4rMsVJRG27AzSGYzScLk&#x2B;pqMKAoLd&#x2B;cUZI29ielAF5mEShZMjuEzx&#x2B;NU5HaR8uc89AOBUiKJJMEkn9amaHONgGe/elcq1yjubGDjr1NDHjGatmA56FhUkVmJwSgPXoetFw5WVUhYjpx7VKQFdYxk54NSCN7diMBj/AHT1ppGWDBcHrjNFwaEiQDLcbMetITBKdjhkOfvjp&#x2B;VIUkZBzgegp9tZs8qk9PQUXFZkU&#x2B;9TtZy2OmTmoo5GicAAbSc1qz2LmBpj91WwBTG00GESgEDj6dKOZD5GQSwAqs2OM8kVVn3HAcZPZ8dRWgQVhcMcPjjtn61SMxkiKsvAP5GncloQxMYhwcjkH2oEDecuOFbvTo5nGFznjgHvT47iJlZHBUY474oFY3fCWpyaPrqusSu5BAUnAJ&#x2B;vbvXultOtxEkqHKsoOa&#x2B;cI5dkyOr/ADAghge4r2fwRetc6KhLuWHTfznBxjNUmS0ddRSBs9sfWlqxBRRRSAWiiimAAYrmvHSrL4VukIJPGMeua6WuJ&#x2B;IuqC00JoVO5nIB54H&#x2B;fSk9hnjzvkleoP6VCVyRgd&#x2B;lSt1O3oeQakgh8yYDt7Vmy0is6sEHHTio/KLjI4xXRXOjyxIrgcNzUUGnO7rGUYMx9KjmRpyO5n2tlI7BQGYnsoro7PQjsDSfJkd624NJjjSMxbVKjsOtbFjpjvIjSYOOgxxWUpnRCmkczF4bkcbo4zsB4PQ1HdeH7mzffHGdhHXFenW9ruA&#x2B;UYHAAFPkslZSuzKnjmp5mU4o8qXTIgofa5Y8EbAeap3lnHbTrJJGQpwcsP6V6dc&#x2B;G7WVSUUg&#x2B;mBxWZeeF3eL5AWOOwH/ANaqUhOCZxkmn&#x2B;YwI2lcZBxjr7Vdg0f7MnmSRnaSCTjjFb3h7TGg1B7S7gwyrmJzgjjtW/f/AGZBKlxJHGkcZJ3EDHbJpXYcqOD1CC2NosUf3pZF2YHYE5/kKqz2zWoS2kXaq4cA8Z46VrRIbu6adnZLeAE25cbc5OS3SmXMbXshleEyBvumMDkjoSCeBRcOW5i3OmM9qXA5z1/CuWlUwXHHQnkHvXcwpcNCLcsyjJJJrO1vQ9tmJYxgoeR3FXGWuplOF0cxKgIO3IA5U4quTySO/Wta2VInaG4yrDjJ6EVnTJtkbAwDWqZg0RRtiQKT9DXrPwuuy0V9ZkcKwkU/Xgj9K8kQfvFGOhrvvhzfNa64wH3J02HjOCDwapbkdD2QDinU0cgHvS1ZItFJRQAtFFFMArz34oJIdOhARfL3ZLHqTXoVc34503&#x2B;0PDNwVA8yEeYDjsOtJ7DR4XGfm2H6g1q6UnmzMMD0FZiqQ/uK0tNlEc6jOOaylsaR3OpulcWqkqSMDOO1TafB5kxkMZx0UEdu/wDSp4UFzEAfrWnZRhWOB09a52zriiS1s&#x2B;F7Y7VtW8O0jP5VDCgIrRgUcCs7mqLtuoC1a8lSM1FbqABirgTiqQmVDCuMjrTfLGNufzq4F5pDH&#x2B;FMky5rRZGJ&#x2B;Vc98VmS&#x2B;H7OW5WeVDJIv3S53bfpmujMQIzj8ab5IHOKTGjldR03zrqOFWRIx87b1JDEdOhHT0qOa1iVAs05kbso&#x2B;VfyHb610stumSxUEms&#x2B;a2TdwoFSyjFewhWMeWMLVC7sEaMpgc1vyJjIqjOowc0XE0ed3&#x2B;mSW&#x2B;4bVIToT1K&#x2B;lczccSEivStXRHhJI5HQ155eqouDj&#x2B;I10U3c5aqM4DYzY&#x2B;90Fei/DSySW9aUjLRYxxnr1rz9IsSnJ5z3r23wBof9l6KLmRR59yNx45C9hWy3OdnXUUUVoSFFFFAC0UlFAC0ySNZYnjcZV1Kkexp1FAHz3qln9i1a5tmUjy3ZefrVe05ukIPfk10/xFtzB4okcDCyorZA74rmLZCHBB59BWTNInfaQ/mJkdK27cAMeaxtHiENumeCRyK2Yvv1ySO2Bo2xL5yCvOOe9aMA2L1rPhVs9fpV6NvlwTmosa3NS2YPgg1eXkVmW0iqmRgVfSUHvVIUmS7eaCOMk8CgOM9aeMEc9KqxI0KMAg8Ux1GOeKexC8cZqKST5etFgK0ox71Rl6mrkrjrVKZ8&#x2B;lQ0VcpTHg/1rJu2YqcHFac5JBHesmZsE7uMVKA53XpTHannkCuDkcvKSec13PiFDJaOy5O2uGC/MR3x3rqpbHJW3LOl2Mt/qlvaxLl5XAxX0FbQrb20UCDCxqFA&#x2B;leX/DLTvP1Oe9dMrAuFJ/vH/wCtmvVK6InMxaSiiqEFFFFAC0UUUAFNJpSao3d&#x2B;tu4jC7pCM4zjAqW0ldlRi5OyOK&#x2B;KNqHsLS8AO5HMZPsRn&#x2B;lcR4ftvtN3kjKpyc16T4tT&#x2B;1vDtzbbSkyDzUBOQ23k4/DNcF4UUmeb2UVnJpq6NIxalZnTxHaeBV9LiGBTLMwUAY5OKz5H8tSe9c/JFNfTtI7ng/Lz0rDludKdjsF8U6fCSkkpB9hmnN4s0xUBkm256AjFckulzO/N3tH4U1tJmjYlbu1kJ6705/OiyHdnZQ&#x2B;M9LHH2gfQVuWeu21xGHSQFT0Oa8ok055hte0hBHR4XxVqFZooVhYsqg5OD1pNLoUm&#x2B;p6/Ffq4&#x2B;Ugj2qQXwUkA5rz/AEW/uNwiYnA7100bTE5IGKi5pY0LjU1jR3Yk47Vjz&#x2B;KYRE7KwwoPf8v51kazLIzFd&#x2B;M&#x2B;lc7PG7kqBkkYJppiaOhPjiBXKujNzjIqZPGOnzEYmwe4xyK4iXQ57iQs1wFz61JF4U3c/b8N22Cr93uZPm7HcrrdnOoKSqeefmpLsK6EqQe/Ncb/AMI69uDuuWkP0x&#x2B;tMWW9sSqhz5YPTdnI9KXKmO7RszHfkEZHcVwl9CYbyVR2JruYWEsat/e5xXIapE0usSRr95pNoHrmrp6GFXU9O&#x2B;HVmbbw2Jmxm4cv746f0rrs1iaW8GlaZa2LPloYwrbRnnvWvFKkqB0YMp6EV0prY53FrVktFJRVEi0UlFAC0UUGgBrGuA8Sy3sWtvc2spBjxmM9GAA4rvWNcxrVsPtckvZkH&#x2B;H9Kwr/AAnThbe01HWV7baxpyuDgkYI7qa5CxsUsNfv4I/uAKR&#x2B;NW9h0mQXMTEK&#x2B;BKnY&#x2B;9Q2k/2nWrqXHVVFc8Lq50VbOxbu4ty46ise5c26Eqo3dq6kQCRMdc1hatpc7xtszt74pqXQSj1OfbUWeVY41e5nPQdFH4VSPiHU7S5eIukC8g4iB5Hat/TI7ayclomEp4yBkVLeaLY6hOZ2lCZ&#x2B;9jqf0rWPKjKam2Y&#x2B;nX19fRPNJaqypyzxfKw9/et60f7TB83zY6NjrWhZW9vY2v2a02/N95iMmpbbT1tllVCzmQ5LEcD6VlUa6G9OMlHUk0SEtcgdq7pbRFts98VzGkwhLjAFda5xaYB5rI1scJrSYuCoH41z9zcNAh2ADHBdugrrL&#x2B;LzLtw3THBrGm04GSMkhfKJYKRkGnFikmcnf6pNp6xytZM4kBKvMeo9cVGPFEjXH2d7C3J6Zgb&#x2B;RFdVrtrba3ZRxS7IZ4&#x2B;FZfun2xWDpXhuGznE9xPEQhyADXSlGxxydRMkt9V8wHypWDL96GU8/nVpHW6wQvDdRVHVrOCW5NxbuN/Qqoq/psDMoDKQcVnJJbG0W2tS7bpsOBxjpVXR9JN74puJycJA&#x2B;4HHetKKIDJ64pNOvksjekkbjJ/QUuZ2dhcqbSZr6xqFvpdnlV3yHhEHVmqx4TvLi4t5jcKFYsGCjotc0LeW7uUvbk7mLfKnZB/jXT6HGY5Jz0XjFOl8aLr2dJnRqadUSGpAa7TzRaKKKACg0UhoAjesXWUyEP94bf1FbL1lauD9k3gZKMDWdRXizWi7TTMS7sTKhixkMMYxWFY2/2O6niLZZSATXYXEwFl9pjG5cZBFcgtws&#x2B;r3kqnhmGPyrkgd1bodHZNnGatzW6uhyvWsmzlORz3rdiYOgBIqXoEVdGM2kQvJuA59RT10mFRzk/WtYwfNkVOlvn5jjFLmKszMttOUdFwo9qdMFR9o4GMVrMAqYArCvZtsm0fePFDdy9tS3pv&#x2B;uZvyroJz/op45xWNptuVAJ6mtudSLfp1FFikcrI265YE1L5CT5B6&#x2B;tQagDBMJh0J5qeyYuRjvzRtqS9dClNpiSOQVzj2qnN4fRgAOx9PauskhVkBA5H4VTdeowafMS0znYdGWFskAk9qvLZLEFIHStFIcYPtUF1KI4wcZx6UXJsZ02EzisBrSa51BljDeWW3ORWrcTdados6RJcM33mcKKpbEX95FuOBo7MtjG0Zrc08bYiR3P8hVS6dI9Px3fAHHWr1suyJVPXHP1rShH3rk4qVoqJoRmphVaOrA6V1nAOooooAWkNFBoAieqlwgkiZD0YYq2wqvIKQHMqv2O4WN5SLdyQUJ&#x2B;63&#x2B;Fc1eQjTvEEkSkFJMMCOmD/APqrr9Xt1JEzbdg&#x2B;9k457fjXFa9&#x2B;51eIrwNoB9ua5eTllY7XU54XN60kzj1JrctDlsdq5uxOdrAkqQDgV0Vi44OOp4rKaNabNiGMMee9ShPLO0DrTYXBNWQFIBxWZsmVZUzkYrm5PKj1QtKcAD5c11jp8pOMmvPPEskq300cKFnX7oFUkDZ3VgYnAIYY&#x2B;tWr2X5QF&#x2B;6K8p0nxXLEDBdK8MiHBVu9bsni&#x2B;CO1Z2lXA96dmgUk9TX1NomgZHYAGk0cM1upxyOtcNFr8mr3TNtkEeeCRgGu/wBAG&#x2B;xVxjBOOlDQJ31NRQcHd0qJowQSTVkgggd6ik&#x2B;6R3qGMoyAqvArIvGODjoO1a9021TWBdudxXGQTnNNIiTMq4kPOe1TeHbN7vdcOcQo5PPc1mX8pjiIHU5FaWnRTQ6PGqthWG4jOK1exjB&#x2B;9c2IUlur4SSvuRD8i9gB3rdjrO0&#x2B;DyoF3ffIGTWnGK6qcOVHJWqc8izHU69KhQVMK0Mh1FFFAC0GkooAY1QSCrDVC4oA527MV1rDWUoIdYjIhz/ugED2&#x2B;auO8V2NzFPDPKUKr8oZc5P4V2&#x2B;saT9ueK5gna3vYP8AVzKM8ehHcVx3iePV/saHUWtCitwYFbLe5z061nKKeppGTSsJo1yXRVON31zXU2chdgpHHeuB02do3TDDJbGF9PWuy0&#x2B;eIkENyPU965Zo6qbOogYZHFXlOBzXOSrJc2vlJO0bEg7169asT6xFBGFaQEgY96ysdCZsPKF5yMd64LxNPCl39ojuNkoHzAYOR9KXWvFqRhY4/vk9j0HvXn&#x2B;p6hJezvyVXpgd60hBsidVRWhvw6jp1&#x2B;HjuVDN2bFMe30mFGm2h9nvxXJsXjiYDgk5yKdHLJscMTtHO33rbkOf2rZ2Vq7Xu0QtHFCcc46V6TpMS21lHAnRRXh2k6gbedFlPyDjn0zXpWieJUljUlsKDg7jWU42OinV5lqdszYA7mq8rDBywx60xbuOaPKkHjtVWV8IUJLH3rE0voV7uYkFT0&#x2B;tYNy2GJyc9hmtC7mUJ/niud1C62Ke4IyD6GrijKTMvVXMkyQocsSBjPrXYabYyCKH7QRtjUYQevvXFaYjahrVvlVJB3HnggV6TCuFAPUCuuEE9Wcc6jWiLMa1bjFV4xVuMVsYkyCpRTFHFPoAKKKKAFopKDQAhqF6lY1A5oAgkrA8R2f27SZ4ujBcgg963JGqlcDzI2X1GKQHlVuGyB0xxkcVs6Ze&#x2B;WxBOcVjXUT2uozxFsFZCKkSYxPgYxnt3rmmjqhI6y61o21tvP3m4UZ6e9chPq8ssx3MenOe1SanM8xT5ui4/GotP077XnJKr3PrUJJK7NG3J2RWQG5uAWPy9cmojat9sxgk9zWm&#x2B;miK5VBK209K0INJEzAJMwkPTpzVc3Y1hQ5lqZ&#x2B;l6XHJeGSdgqq2QpHBqaXRIJr2Rlf5Cc4PTrWjNoWoqjYlCgcE45p8egami8uTgYyV9KLs2&#x2B;rxtY5SbSmhl3n6kegpbeV4o8KxHeti5sZgXjkmyw46cVnpZzsPLBTgZBp3vuYToOL0Nix8RTQqqsxIH&#x2B;cV1Ftq32q3EnUHpXmTQSRHD5HOf/rVraFfyxFo5CSp7H1qJQTV0RGbTszpLy&#x2B;JR1LDOODXOXNwWiGXGSTT7&#x2B;83yswPGOazDL5inPBVc0RRM5HT&#x2B;DLfdLcXJBGMKPSu4jFc34VhMWkozfxktjFdJGa64rQ45blyMVajqpGatxmqETjpTqYDTqAFopKKAFpDRSGgCNmqvI1TPVaSgCvK9UpHNWJu9UnPNAHBeLo3h1ZJsLtkHOD1rDE&#x2B;MYBDZ4Fdd4ugEscRwc84P5Vx9u2G8thlgccisZLU1hsSl3kK5BA7muns3hgs1CLjjmucw5lChicdiKtQ70QHflRwMd6xkrnRB2ZpXGGHzYXuMdqqLqotH&#x2B;Z&#x2B;PWoZpXnkWJPvH72egFUptNubhiygYOFA7n8KIruae0lH4TfTxJbMvzXKn2LVK3iZNm1bvPtvrkZtJkR4wFLA8E46H0qM6XciNZEGUb&#x2B;IdqvlXcf1ue3KdM92Ll85xnvViAIpUKee5rm7ezuoTvxuXkGtPzmjK7u4GPxqGuwvayl8RPqtsrQGVB8wPUVlW0gET8EOTmtOe5Hk7G4z19Oay5FCkMpyh4x6GiO1iJ7kRdnO3J25o2Fp1iBzuPao5HXBH41c0eGSS5V&#x2B;SARzVmTPSrKJba1jiXoFFXo2qknCgelTxtXQcxpRtVqNqz42q3GaYF1WqQGoENTCgB1FJRQAtIaKDSAieqslW3qtIKYFGUVRk61oSiqE5CAs3QcmgDD16IS28YK5&#x2B;auD1G2e1ufMXgZyMV07X895q0m9x5GCET0x3qvqNmtxE27qOnFYTdpG0FeJzZvC2xs9Opx2rVtblZreMA/OeFGK5&#x2B;4R4ZGUggjqDU1jemGRM8BTjJpON0NSszo7eFUR3fliQGA/Wtm3hULy&#x2B;1nBAIHPT/Cufsr0GNwSOPmqyt9JFIX/AItmfpms3HU3jJWLU8KQIIyBw3AHfjr&#x2B;dPaCLyPL6E5C7eh5z/jVCS&#x2B;80qc/MOGHrzTri7DEKp&#x2B;Vd3OcYNPUakhY5gqkk5IOCPf1qrIylCjDqNvPtUaPhAOjEkZ9KbLKqxncAcDPXr2z9aLEOQ25ujHsPBVgAR71GZ08rnB3Dnjof8is27uBII1XJx1qPzCwCe1XymfPqTRn7RPjafTrxXVadarBErZzt54PWs7R7DCKcHcTk8dBXQxxeXCcgAkdBUSfQqMerNuxukvrKO5jGFbjHoauR1iaAj2uneVJkDZvx6c1uxiuuxylqKrcYqtGKtxigCzGKmHSokFS0ALRSUUALRSUUANaq7irLVA4pAU5RWNNKJrWaUHgy7F&#x2B;grdliLxS47ITXKwSf6AI88/aGzVxQmYM2nPa6gJvmK7z24AIq08Zd1G0EdDzVvxGZLc4GdhIb9ajj&#x2B;eIY9K5Ksrya7HXSjaPqc1qulM6M8a4YfniuWliZHIPDDtXpgiZgwONxHQnrXM61opJaaIMD3BFKMugpw6o52K7eMg5xzyPWrYv2kY5P3uBVB4WU4YcioyjCtLIzTaNRL0K7sSD8vc96et7iIoxO7OTWOUYDJpcOOpOaVkPmZqyXmXzvOM8j&#x2B;tVpbkspTdjNVQHwecUKh7nmnZCbY4AluBnHetvRbDe4lkX5RVbT9MaWRS5KKe/c12VnbpHbR7SQAcABcZrOcjSELskjt0jjO1B71ZFtJOVhhGXbgeg96ns7Wa5mWGFdzMcey10N1BDo9p5MXzSkbpX7n0H0pUoOciqs1BGLNsheWNTkRQbSfU1qRIfJhY/xIDWEVZoRu&#x2B;/cyZP&#x2B;6K6ryPLsoQeqrXVWlyRuclNczsNjFW4xUEYHqOOKtoKE0xtNEqin00UtMQtFJRQAUtFFIBDUTiiigCOzbzBMezL&#x2B;gNcVcqYJblR/BOrD9RRRWWEk5Rbfc0xCSlZF3xLatP4dkuYsfu2G/PXafT8cViaZL5lrGT6CiipxCtI0w7ui&#x2B;Ylfk9R3psqCQhGUEHvRRXOdJgaj4fjdmYYXI4xWN/wj0oUsXAPsaKKtSdjJxRU/ss7yu4Hb1pG0xwpKtRRVJslxRYh0KSQfOwzjoDW3ZeHoogpYBuOSaKKlyZUYo04rCJJxgdDnFaENuZJlUAMx98ACiipk9Gy7WO10ezitbcyYHyDJwO9YOtSmWQKT80rc/5/z0oorrwi/dpnHiH79ilBELjWliU/JCAg/rXSX8qxxhPRQKKKzxr9yxWGXvlCASm/mkQZQRgEFsZNWtO1Bbj5DnOSASPTqDRRSb5Z6GqipQuzTpaKK6DlCiiimB//2Q==" style="width:200px;margin:20px 0" />
-                        </dd>
-                    </div>
-                </dl>
-                <label class="govgr-label govgr-label-blue" style="margin-top:60px">Στοιχεία αναπηρίας:</label>
-                <dl class="govgr-summary-list">
-                    <div class="govgr-summary-list__row">
-                        <dt class="govgr-summary-list__key">
-                            Ημερομηνία λήξης Κάρτας Αναπηρίας
-                        </dt>
-                        <dd class="govgr-summary-list__value">
-                                30/12/2025
-                        </dd>
-                    </div>
-                    <div class="govgr-summary-list__row">
-                        <dt class="govgr-summary-list__key">
-                            Συνολικό Ποσοστό αναπηρίας
-                        </dt>
-                        <dd class="govgr-summary-list__value">
-                            80.00 %
-                        </dd>
-                    </div>
-                    <div class="govgr-summary-list__row">
-                        <dt class="govgr-summary-list__key">
-                            Κλιμάκιο Ποσοστού Αναπηρίας
-                        </dt>
-                        <dd class="govgr-summary-list__value">
-                            III
-                        </dd>
-                    </div>
-
-                </dl>
-
-            </main>
-        </div>
-    </div>
-</div>
-
-
-<div class="modal" id="epikairopoiisiModal">
-    <div class="modal-dialog">
-        <div class="modal-content">
-
-            <!-- Modal Header -->
-            <div class="modal-header">
-                <h4 class="modal-title">Επισήμανση</h4>
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
+              </form>
             </div>
-
-            <!-- Modal body -->
-            <div class="modal-body">
-                Με αυτήν την επιλογή η Κάρτα σας θα εκδοθεί εκ νέου, αντλώντας επικαιροποιημένα στοιχεία. Για να επικαιροποιηθεί η Κάρτα θα πρέπει να βρίσκεται σε ισχύ η πιστοποίηση αναπηρίας σας. Επίσης, εάν έχετε εκδώσει Κάρτα και στην εφαρμογή wallet στο κινητό σας, θα χρειαστεί να την επανεκδώσετε και εκεί. Θέλετε να προχωρήσετε;
-            </div>
-
-            <!-- Modal footer -->
-            <div class="modal-footer">
-                <a class="govgr-btn govgr-btn-primary" id="epikairopoiisiSubmit" href="/Card/CancelCard?ameaCardID=85574">ΝΑΙ</a>
-                <button type="button" class="govgr-btn govgr-btn-secondary" data-dismiss="modal">ΟΧΙ</button>
-            </div>
-
-        </div>
-    </div>
-</div>
-<div class="modal" id="cancelModal">
-    <div class="modal-dialog">
-        <div class="modal-content">
-
-            <!-- Modal Header -->
-            <div class="modal-header">
-                <h4 class="modal-title">Επισήμανση</h4>
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
-            </div>
-
-            <!-- Modal body -->
-            <div class="modal-body">
-                Με αυτήν την επιλογή η Κάρτα σας θα ακυρωθεί και στην εφαρμογή wallet. Θα μπορείτε να εκδώσετε νέα Κάρτα οποτεδήποτε, εφόσον η πιστοποίηση αναπηρίας σας εξακολουθεί να βρίσκεται σε ισχύ. Θέλετε να προχωρήσετε;
-            </div>
-
-            <!-- Modal footer -->
-            <div class="modal-footer">
-                <a class="govgr-btn govgr-btn-primary" id="cancelSubmit" href="/Card/CancelCardByAmea?ameaCardID=85574">ΝΑΙ</a>
-                <button type="button" class="govgr-btn govgr-btn-secondary" data-dismiss="modal">ΟΧΙ</button>
-            </div>
-
-        </div>
-    </div>
-</div>
-
-
-<script>
-    $(document).on('click', '#epikairopoiisiSubmit', function () {
-        $('#epikairopoiisiSubmit').css('pointer-events', 'none');
-        $('#epikairopoiisiSubmit').attr('disabled', true);
-        $('#epikairopoiisiModal').modal('hide')
-        $('body').append(`
-                    <div class="govgr-full-page-background">
-            <div class="govgr-loader__container">
-            <svg class="govgr-loader" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
-          <path class="govgr-loader__circle govgr-loader__circle--1" d="M26,99.551C26,55.478,60.246,27.5,99.85,27.5S174,55.478,174,99.551,139.455,172.5,99.85,172.5C60.273,172.473,26,143.6,26,99.551Z"></path>
-          <path class="govgr-loader__circle govgr-loader__circle--2" d="M26,99.551C26,55.478,60.246,27.5,99.85,27.5S174,55.478,174,99.551,139.455,172.5,99.85,172.5C60.273,172.473,26,143.6,26,99.551Z"></path>
-        </svg>
-        </div>
-      </div>`)
-    })
-
-    $(document).on('click', '#cancelSubmit', function () {
-        $('#cancelSubmit').css('pointer-events', 'none');
-        $('#cancelSubmit').attr('disabled', true);
-        $('#cancelSubmit').modal('hide')
-        $('body').append(`
-                        <div class="govgr-full-page-background">
-                <div class="govgr-loader__container">
-                <svg class="govgr-loader" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
-              <path class="govgr-loader__circle govgr-loader__circle--1" d="M26,99.551C26,55.478,60.246,27.5,99.85,27.5S174,55.478,174,99.551,139.455,172.5,99.85,172.5C60.273,172.473,26,143.6,26,99.551Z"></path>
-              <path class="govgr-loader__circle govgr-loader__circle--2" d="M26,99.551C26,55.478,60.246,27.5,99.85,27.5S174,55.478,174,99.551,139.455,172.5,99.85,172.5C60.273,172.473,26,143.6,26,99.551Z"></path>
-            </svg>
-            </div>
-          </div>`)
-    })
-
-</script>
-
-    <footer class="footer mt-auto py-3 bg-primary">
-        <div class="container">
-            <div class="d-md-flex flex-row justify-content-center align-items-center pt-2">
-                <div class="mr-md-5">
-                    <p class="text-white font-weight-light text-center flex-grow-1 mb-0 pb-2">Μια υπηρεσία του</p>
-                    <a href="https://www.gov.gr" style="cursor:pointer;" class="mx-auto pb-4 logo_govgr logo_xsmall"></a>
-
-                    <p class="text-white font-weight-light text-center flex-grow-1 mb-0 pb-2">Υλοποίηση <a style="color:#007bff" target="_blank" href="https://grnet.gr/en/company/">ΕΔΥΤΕ</a></p>
-                </div><div class="d-md-flex flex-row justify-content-center align-items-center pt-2"><img alt="Greece 2.0 Logo" class="logo_xsmall d-md-inline mx-auto mb-3 mb-md-0 mr-md-3" style="max-width:200px;" src="/images/ellada20.png"><img class="logo_xsmall d-md-inline mx-auto " src="/images/eu-top-logo-2.png"></div>
-
-
-
-            </div>
-            <div class="d-md-flex flex-row justify-content-center align-items-center pt-2">
-                <img alt="Υπουργειο εργασιας" class="logo_xsmall d-md-inline mx-auto mb-3 mb-md-0 mr-md-3" style="max-width:260px;" src="/images/ergasias-neg.png">
-                <img alt="Υπουργειο ψηφιακης διακυβερνησης" class="logo_xsmall d-md-inline mx-auto mb-3 mb-md-0 mr-md-3" style="max-width:300px;" src="/images/psifiaki_neg.png">
-                <img alt="ΟΠΕΚΑ" class="logo_xsmall d-md-inline mx-auto mb-3 mb-md-0 mr-md-3" style="max-width:150px;" src="/images/opeka-neg.png">
-            </div>
-        </div>
-    </footer>
-    <div id="generic-modal"></div>
-    <div class="modal" id="privacyModal">
-      <div class="modal-dialog modal-xl">
-        <div class="modal-content">
-
-          <div class="modal-header">
-            <h4 class="modal-title">Δήλωση Ιδιωτικότητας</h4>
-            <button type="button" class="close" data-dismiss="modal">&times;</button>
           </div>
-
-          <div class="modal-body">
-
-            <p class="govgr-heading-s">
-                Δήλωση Ιδιωτικότητας σχετικά με την προστασία δεδομένων προσωπικού χαρακτήρα στο
-πλαίσιο χρήσης του «Υποσυστήματος Κάρτα Αναπηρίας» της Εθνικής Πύλης Αναπηρίας»
-(εφεξής «Πλατφόρμα Κάρτας Αναπηρίας»)
-            </p>
-            <p class="govgr-heading-s">Η «Κάρτα Αναπηρίας» ανήκει στον «Οργανισμό Προνοιακών Επιδομάτων και Κοινωνικής
-Αλληλεγγύης» (εφεξής «ΟΠΕΚΑ») και αναπτύσσεται και υποστηρίζεται για λογαριασμό του
-από την ανώνυμη εταιρεία του ελληνικού δημοσίου με την επωνυμία «Εθνικό Δίκτυο
-Υποδομών Τεχνολογίας και Έρευνας Ανώνυμη Εταιρεία» (εφεξής ΕΔΥΤΕ ΑΕ).</p>
-
-            <h2 class="govgr-heading-s">Στοιχεία Υπευθύνων Επεξεργασίας:</h2>
-            <p class="govgr-body">ΟΠΕΚΑ<br>«Ηλεκτρονικός Εθνικός Φορέας Κοινωνικής Ασφάλισης» (εφεξής «e-ΕΦΚΑ»)</p>
-
-            <h2 class="govgr-heading-s">Εκτελούσα την επεξεργασία:</h2>
-            <p class="govgr-body">«ΕΔΥΤΕ ΑΕ»</p> 
-
-            <h2 class="govgr-heading-s">Στοιχεία Επικοινωνίας:</h2>
-            <ul class="govgr-list govgr-list govgr-list--bullet">
-                <li><normaltext>Ξένια Παπασταύρου:</normaltext> <a class="govgr-link" href="mailto:dioikisi@opeka.gr" target="_blank">dioikisi@opeka.gr</a></li>
-                <li><normaltext>Στέργιος Κωνσταντίνου:</normaltext> <a class="govgr-link" href="mailto:dpo@opeka.gr" target="_blank">dpo@opeka.gr</a></li>
-                <li><normaltext>Αλέξανδρος Βαρβέρης:</normaltext> <a class="govgr-link" href="mailto:avarver@efka.gov.gr" target="_blank">avarver@efka.gov.gr</a></li>
-                <li><normaltext>Ανδρέας Τζίμας:</normaltext> <a class="govgr-link" href="mailto:dpo@efka.gov.gr" target="_blank">dpo@efka.gov.gr</a></li>
-            </ul>
-
-            <h2 class="govgr-heading-s">Πεδίο εφαρμογής της παρούσας Δήλωσης Ιδιωτικότητας:</h2>
-            <p class="govgr-body">Ο ΟΠΕΚΑ και ο e-ΕΦΚΑ ως από κοινού υπεύθυνοι επεξεργασίας και η ΕΔΥΤΕ ΑΕ, που
-λειτουργεί ως εκτελούσα την επεξεργασία, δεσμεύονται από τον Ευρωπαϊκό Κανονισμό
-2016/679 του Ευρωπαϊκού Κοινοβουλίου και του Συμβουλίου της 27ης Απριλίου 2016 για την
-προστασία των φυσικών προσώπων έναντι της επεξεργασίας των δεδομένων προσωπικού
-χαρακτήρα και για την ελεύθερη κυκλοφορία των δεδομένων αυτών [Γενικός Κανονισμός για
-την Προστασία Δεδομένων – εφεξής «ΓΚΠΔ»] και το ν. 4624/2019 (ΦΕΚ 137/Α/2019) «Αρχή
-Προστασίας Δεδομένων Προσωπικού Χαρακτήρα, μέτρα εφαρμογής του Κανονισμού (ΕΕ)
-2016/679 του Ευρωπαϊκού Κοινοβουλίου και του Συμβουλίου της 27ης Απριλίου 2016 για την
-προστασία των φυσικών προσώπων έναντι της επεξεργασίας δεδομένων προσωπικού 
-χαρακτήρα και ενσωμάτωση στην εθνική νομοθεσία της Οδηγίας (ΕΕ) 2016/680 του
-Ευρωπαϊκού Κοινοβουλίου και του Συμβουλίου της 27ης Απριλίου 2016 και άλλες διατάξεις»,
-όπως κάθε φορά ισχύει [εφεξής «Νόμος»]. Στην παρούσα Δήλωση Ιδιωτικότητας
-περιγράφονται αναλυτικά όλες οι απαραίτητες πληροφορίες για την επεξεργασία δεδομένων
-προσωπικού χαρακτήρα που πραγματοποιείται στο πλαίσιο χρήσης της Πλατφόρμας <strong>Κάρτας
-Αναπηρίας</strong>, καθώς και οι πολιτικές και διαδικασίες που τηρούνται από τον ΟΠΕΚΑ, τον e-ΕΦΚΑ
-και την ΕΔΥΤΕ ΑΕ για την προστασία της ιδιωτικότητας των χρηστών της Πλατφόρμας <strong>Κάρτας
-Αναπηρίας</strong>. Η παρακάτω Δήλωση Ιδιωτικότητας παραθέτει τα κριτήρια και τις προϋποθέσεις,
-σύμφωνα με τα οποία ο ΟΠΕΚΑ, ο e-ΕΦΚΑ και η ΕΔΥΤΕ ΑΕ συλλέγουν, επεξεργάζονται,
-χρησιμοποιούν, αποθηκεύουν και διαβιβάζουν τα δεδομένα προσωπικού χαρακτήρα των
-χρηστών της Πλατφόρμας <strong>Κάρτας Αναπηρίας</strong> και πώς διασφαλίζουν την τήρηση του
-απορρήτου των πληροφοριών αυτών, καθώς και κάθε νομοθεσία ή/και κανονισμό που
-υλοποιείται ή δημιουργείται σύμφωνα με την ενωσιακή και εθνική νομοθεσία περί προστασίας
-δεδομένων προσωπικού χαρακτήρα και τη νομοθεσία για την προστασία του ηλεκτρονικού
-απορρήτου ή τροποποιεί, αντικαθιστά, εκδίδει ή ενοποιεί οποιαδήποτε από αυτές, καθώς και
-όλους τους άλλους ισχύοντες ενωσιακούς και εθνικούς νόμους σχετικά με την επεξεργασία
-δεδομένων προσωπικού χαρακτήρα και την ιδιωτική ζωή, οι οποίοι ενδέχεται να υφίστανται
-σύμφωνα με το εφαρμοστέο δίκαιο.</p>
-            <p class="govgr-body">Ο ΟΠΕΚΑ, ο e-ΕΦΚΑ και η ΕΔΥΤΕ ΑΕ διατηρούν το δικαίωμα να τροποποιούν και να
-αναπροσαρμόζουν την παρούσα Δήλωση Ιδιωτικότητας, όποτε κρίνεται αυτό αναγκαίο.</p>
-            <p class="govgr-body">Για τους σκοπούς της παρούσας Δήλωσης Ιδιωτικότητας, ο «υπεύθυνος επεξεργασίας», ο
-«εκτελών την επεξεργασία», ο «τρίτος», η «εποπτική αρχή», τα «προσωπικά δεδομένα», η
-«επεξεργασία», το «υποκείμενο των δεδομένων» έχουν την έννοια που ορίζεται στην ισχύουσα
-νομοθεσία περί προστασίας δεδομένων προσωπικού χαρακτήρα.</p>
-            <p class="govgr-body">Επιπρόσθετα, για τους σκοπούς της παρούσας ισχύουν οι ακόλουθοι ορισμοί:</p>
-            <p class="govgr-body">«Ιστότοπος <strong>Κάρτας Αναπηρίας</strong> » – ο διαδικτυακός τόπος (website) που είναι προσβάσιμος
-μέσω του ονόματος χώρου: https://karta.epan.gov.gr, συμπεριλαμβανομένου του συνόλου των
-ιστοσελίδων αυτού.</p>
-            <p class="govgr-body"><strong>«Πλατφόρμα Κάρτας Αναπηρίας»</strong> - η πλατφόρμα για την έκδοση της κάρτας αναπηρίας από τα
-άτομα με αναπηρία που διαθέτουν πιστοποίηση αναπηρίας σε ισχύ και είναι εγγεγραμμένα
-στο Ψηφιακό Μητρώο Ατόμων με Αναπηρία του άρθρου 105 του ν. 4961/2022 χορηγείται
-Κάρτα Αναπηρίας, εφόσον έχουν συνολικό ποσοστό αναπηρίας τουλάχιστον πενήντα τοις
-εκατό (50%)</p>
-            <p class="govgr-body"><i>«Χρήστης»</i> - ο διαδικτυακός χρήστης της <strong>Πλατφόρμας Κάρτας Αναπηρίας</strong>.</p>
-
-
-
-
-            <h2 class="govgr-heading-m">Α. Σκοπός/-οί επεξεργασίας των δεδομένων που συλλέγονται:</h2>
-            <p class="govgr-body">Η Πλατφόρμα Κάρτας Αναπηρίας δίνει τη δυνατότητα στα άτομα με αναπηρία που διαθέτουν
-πιστοποίηση αναπηρίας σε ισχύ και είναι εγγεγραμμένα στο Ψηφιακό Μητρώο Ατόμων με
-Αναπηρία του άρθρου 105 του ν. 4961/2022 να τους χορηγείθει Κάρτα Αναπηρίας, εφόσον
-έχουν συνολικό ποσοστό αναπηρίας τουλάχιστον πενήντα τοις εκατό (50%). Η επεξεργασία
-προσωπικών δεδομένων των «χρηστών» πραγματοποιείται για τους ακόλουθους σκοπούς:</p>
-
-            <h2 class="govgr-heading-s">Ειδικότερα:</h2>
-            <p class="govgr-body">O ΟΠΕΚΑ, ο e-ΕΦΚΑ - ως από κοινού υπεύθυνοι επεξεργασίας – και η ΕΔΥΤΕ Α.Ε. –ως
-εκτελούσα την επεξεργασία - επεξεργάζονται τα προσωπικά δεδομένα Χρηστών, που
-αναφέρονται σε επόμενη παράγραφο, για τους ακόλουθους σκοπούς επεξεργασίας:</p>
-
-            <ol class="govgr-list govgr-list--number">
-                <li>
-                    <h2 class="govgr-heading-s">Παροχή των υπηρεσιών της Πλατφόρμας Κάρτας Αναπηρίας:</h2>
-                    <ol class="govgr-list govgr-list--bullet">
-                        <li>Απρόσκοπτη λειτουργία του «ιστοτόπου» και της <strong>Πλατφόρμας Κάρτας Αναπηρίας</strong>,</li>
-                        <li>Φιλική και εύκολη προς τον «χρήστη» λειτουργία του Ιστοτόπου,</li>
-                        <li>Βελτίωση της διαδικτυακής εμπειρίας κατά την παροχή των υπηρεσιών της <strong>Πλατφόρμας Κάρτας Αναπηρίας</strong>,</li>
-                        <li>Απρόσκοπτη παροχή της <strong>Πλατφόρμας Κάρτας Αναπηρίας</strong> στους Χρήστες.</li>
-                    </ol>
-                </li>
-                <li>
-                    <h2 class="govgr-heading-s">Αυθεντικοποίηση Χρηστών υπηρεσίας</h2>
-                    <ol class="govgr-list govgr-list--bullet">
-                        <li>Αυθεντικοποίηση «χρηστών» με τα διαπιστευτήρια που έχει ο Χρήστης στο
-TaxisNet χρησιμοποιώντας την Υπηρεσία Αυθεντικοποίησης Χρηστών oAuth2.0
-που προσφέρεται μέσω του Κέντρου Διαλειτουργικότητας της Γενικής
-Γραμματείας Πληροφοριακών Συστημάτων Δημόσιας Διοίκησης (ΓΠΣΔΔ).</li>
-                    </ol>
-                </li>
-                <li>
-                    <h2 class="govgr-heading-s">Επικοινωνία με τους Χρήστες της Πλατφόρμας Κάρτας Αναπηρίας:</h2>
-                    <ol class="govgr-list govgr-list--bullet">
-                        <li>Η επικοινωνία με τους Χρήστες» της <strong>Πλατφόρμας Κάρτας Αναπηρίας</strong> γίνεται
-κατόπιν <strong>ιδίας πρωτοβουλίας</strong> του Χρήστη, μέσω σχετικής ηλεκτρονικής φόρμας
-επικοινωνίας. Η Πλατφόρμα <strong>Κάρτας Αναπηρίας</strong> λαμβάνει τα προσωπικά
-δεδομένα του χρήστη, <strong>αν ο Χρήστης επιθυμεί</strong>, με ίδια βούληση, να προβεί
-στην γνωστοποίηση των παραπάνω προσωπικών δεδομένων, προκειμένου να
-επικοινωνήσει με τους διαχειριστές της πλατφόρμας. Επίσης γίνεται με
-πρωτοβουλία των υπεύθυνων στα στοιχεία επικοινωνίας που ο Χρήστης έχει
-δηλώσει ή στα στοιχεία επικοινωνίας που τηρούνται στο Εθνικό Μητρώο
-Επικοινωνίας ή στο Ψηφιακό Μητρώο Ατόμων με Αναπηρία και τούτο μόνο για
-(α) την διανομή της Κάρτας Αναπηρίας και (β) ενημέρωση του Χρήστη για την
-λήξη ή ακύρωση ή επανέκδοση της Κάρτας και την προσθήκη παροχών σε
-αυτήν.</li>
-                    </ol>
-                </li>
-                <li>
-                    <h2 class="govgr-heading-s">Για την έκδοση της κάρτας αναπηρίας:</h2>
-                    <ol class="govgr-list govgr-list--bullet">
-                        <li>Για την παροχή δυνατότητας της έκδοσης της κάρτας αναπηρίας</li>
-                    </ol>
-                </li>
-                <li>
-                    <h2 class="govgr-heading-s">Για την επικύρωση της Κάρτας Αναπηρίας:</h2>
-                    <ol class="govgr-list govgr-list--bullet">
-                        <li>για τις παροχές που απαιτούν επικύρωση της Κάρτας Αναπηρίας.</li>
-                    </ol>
-                </li>
-                <li>
-                    <h2 class="govgr-heading-s">Δημιουργία στατιστικών αναφορών και γραφημάτων για την παρακολούθηση της Πλατφόρμας Κάρτας Αναπηρίας:</h2>
-                    <ol class="govgr-list govgr-list--bullet">
-                        <li>Για την παρακολούθηση της <strong>Πλατφόρμας Κάρτας Αναπηρίας</strong> επεξεργαζόμαστε
-δεδομένα προσωπικού χαρακτήρα, σύμφωνα με όσα αναφέρονται στην
-επόμενη ενότητα, με σκοπό την δημιουργία στατιστικών αναφορών και
-γραφημάτων.</li>
-                    </ol>
-                </li>
-            </ol>
-            <p class="govgr-body">O ΟΠΕΚΑ και ο e-ΕΦΚΑ - ως από κοινού υπεύθυνοι επεξεργασίας – και η ΕΔΥΤΕ ΑΕ –ως
-εκτελούσα την επεξεργασία συλλέγουν και επεξεργάζονται δεδομένα προσωπικού χαρακτήρα
-«χρηστών» στο πλαίσιο παροχής της πλατφόρμας «<strong>Κάρτα Αναπηρίας</strong>» αποκλειστικά και μόνο
-για τους προαναφερόμενους σκοπούς και μόνο στο απολύτως αναγκαίο μέτρο για την
-αποτελεσματική εξυπηρέτηση των σκοπών αυτών. Τα δεδομένα αυτά είναι κάθε φορά συναφή,
-πρόσφορα και όχι περισσότερα από όσα απαιτούνται εν όψει των ανωτέρω σκοπών, είναι δε
-ακριβή και, εφόσον χρειάζεται, υποβάλλονται σε ενημέρωση. Περαιτέρω, τα εν λόγω
-δεδομένα <i>διατηρούνται μόνο κατά τη διάρκεια της περιόδου, που απαιτείται και αναφέρεται
-παραπάνω, για την πραγματοποίηση των σκοπών της συλλογής και επεξεργασίας τους και
-διαγράφονται μετά το πέρας αυτής (βλ. παρακάτω «Χρονική διάρκεια διατήρησης δεδομένων
-προσωπικού χαρακτήρα»).</i></p>
-
-
-
-
-            <h2 class="govgr-heading-m">Β. Κατηγορίες δεδομένων προσωπικού χαρακτήρα που υφίστανται επεξεργασία:</h2>
-
-            <ol class="govgr-list govgr-list--number">
-                <li>
-                    <p class="govgr-body"><strong>Για την παροχή των υπηρεσιών της Πλατφόρμας Κάρτας Αναπηρίας:</strong> Για την χρήση
-της <strong>Πλατφόρμας Κάρτας Αναπηρίας</strong> και την λήψη του συνόλου των υπηρεσιών της
-καθώς και για την αποτελεσματική και σύννομη λειτουργία της πλατφόρμας αυτής, το
-ΟΠΕΚΑ και ο e-ΕΦΚΑ ως από κοινού υπεύθυνοι επεξεργασίας – και η ΕΔΥΤΕ ΑΕ –ως
-εκτελούσα την επεξεργασία επεξεργάζονται τα ακόλουθα δεδομένα προσωπικού
-χαρακτήρα:</p>
-                    <ol class="govgr-list govgr-list--bullet">
-                        <li>Διεύθυνση IP (IP address), η οποία αποδίδεται στην συσκευή με την οποία ο
-«χρήστης» συνδέεται στην Πλατφόρμα <strong>Κάρτας Αναπηρίας</strong>,</li>
-                        <li>Δεδομένα πλοήγησης εντός του Ιστοτόπου μέσω της εγκατάστασης προγραμμάτων
-άντλησης δεδομένων τύπου «cookies», όπως αναλυτικά περιγράφεται στο
-«Cookies Policy» της Πλατφόρμας <strong>Κάρτας Αναπηρίας</strong>,</li>
-                        <li>Χρονοσήμανση της χρήσης της Πλατφόρμας <strong>Κάρτας Αναπηρίας</strong> (timestamp),</li>
-                        <li>Στοιχεία συσκευής σύνδεσης (λειτουργικό σύστημα, λογισμικό φυλλομετρητή).</li>
-                    </ol>
-                </li>
-                <li>
-                    <h2 class="govgr-heading-s">Αυθεντικοποίηση Χρηστών υπηρεσίας</h2>
-                    <p class="govgr-body">Η αυθεντικοποίηση των Χρηστών της Πλατφόρμας <strong>Κάρτα Αναπηρίας</strong> παρέχεται από το
-κέντρο διαλειτουργικότητας της Γενικής Γραμματείας Πληροφοριακών Συστημάτων
-Δημόσιας Διοίκησης (ΓΠΣΔΔ), με τα διαπιστευτήρια που έχει ο Χρήστης στο TaxisNet κατά
-τα οριζόμενα στη με αριθμ. 3981ΕΞ2020 Απόφαση του Υπουργού Επικρατείας «Παροχή
-Υπηρεσίας Αυθεντικοποίησης Χρηστών oAuth2.0 σε Πληροφοριακά Συστήματα τρίτων
-Φορέων» (Β’ 762). Με αποκλειστικό σκοπό την ταυτοποίηση των Χρηστών που
-χρησιμοποιούν την υπηρεσία «<strong>Κάρτα Αναπηρίας</strong>» η ΕΔΥΤΕ ΑΕ λαμβάνει μέσω της ως άνω
-αυθεντικοποίησης (oAuth 2.0), και επεξεργάζεται –ως εκτελούσα την επεξεργασία- τα
-ακόλουθα δεδομένα προσωπικού χαρακτήρα:</p>
-                    <ol class="govgr-list govgr-list--bullet">
-                        <li>όνομα</li>
-                        <li>επώνυμο</li>
-                        <li>username «χρήστη» στο TaxisNet</li>
-                        <li>όνομα πατρός</li>
-                        <li>όνομα μητρός</li>
-                        <li>έτος γέννησης</li>
-                        <li>ΑΦΜ</li>
-                    </ol>
-                </li>
-                <li>
-                    <h2 class="govgr-heading-s">Για την Επικοινωνία με τους Χρήστες της Πλατφόρμας Κάρτας Αναπηρίας:</h2>
-                    <p class="govgr-body">Για την επικοινωνία με τους χρήστες της Πλατφόρμας Κάρτας Αναπηρίας, ο ΟΠΕΚΑ και ο e-
-ΕΦΚΑ - ως από κοινού υπεύθυνοι επεξεργασίας – και η ΕΔΥΤΕ ΑΕ –ως εκτελούσα την
-επεξεργασία επεξεργάζονται τα ακόλουθα δεδομένα προσωπικού χαρακτήρα:</p>
-                    <ol class="govgr-list govgr-list--bullet">
-                        <li>Διεύθυνση ηλεκτρονικής αλληλογραφίας (e-mail),</li>
-                        <li>Τηλέφωνο</li>
-                        <li>Ταχυδρομική Διεύθυνση</li>
-                        <li>Ονοματεπώνυμο.</li>
-                    </ol>
-                </li>
-                <li>
-                    <h2 class="govgr-heading-s">Για την έκδοση της κάρτας αναπηρίας και την διασύνδεση με παροχές:</h2>
-                    <ol class="govgr-list govgr-list--bullet">
-                        <li>φωτογραφία προσώπου</li>
-                        <li>όνομα</li>
-                        <li>επώνυμο</li>
-                        <li>πατρώνυμο</li>
-                        <li>μητρώνυμο</li>
-                        <li>ΑΜΚΑ</li>
-                        <li>ημερομηνία γέννησης</li>
-                        <li>τα δεδομένα αναπηρίας, πιστοποιήσεων αναπηρίας και παροχών αναπηρίας που
-τηρούνται στο Ψηφιακό Μητρώο Ατόμων με αναπηρία</li>
-                    </ol>
-                    <p class="govgr-body">Στην Κάρτα Αναπηρίας αποτυπώνονται τα ακόλουθα στοιχεία:</p>
-                    <ol class="govgr-list govgr-list--bullet">
-                        <li>φωτογραφία προσώπου</li>
-                        <li>όνομα</li>
-                        <li>επώνυμο</li>
-                        <li>πατρώνυμο</li>
-                        <li>μητρώνυμο</li>
-                        <li>ημερομηνία γέννησης</li>
-                        <li>ημερομηνία λήξης της Κάρτας Αναπηρίας</li>
-                        <li>μοναδικός κωδικός επαλήθευσης εγγράφου του άρθρου 27 του ν.4727/2020</li>
-                        <li>μοναδικός QR-CODE</li>
-                        <li>λογότυπο της Κάρτας Αναπηρίας</li>
-                        <li>
-                            <p class="govgr-body">σήμανση κλιμακίου συνολικού ποσοστού αναπηρίας ως εξής:</p>
-                            <ol class="govgr-list govgr-list--bullet">
-                                <li>σήμανση «I» για όσους έχουν συνολικό ποσοστό αναπηρίας από 50% έως και 66%</li>
-                                <li>σήμανση «II» για όσους έχουν συνολικό ποσοστό αναπηρίας από 67% έως και 79%</li>
-                                <li>σήμανση «III» για όσους έχουν συνολικό ποσοστό αναπηρίας από 80% και άνω.</li>
-                            </ol>
-                        </li>
-                        <li>Σήμανση «Σ» περί του αν ο δικαιούχος της Κάρτας Αναπηρίας χρήζει συνοδού για
-τους σκοπούς της Κάρτας Αναπηρίας</li>
-                    </ol>
-                </li>
-                <li>
-                    <h2 class="govgr-heading-s">Για τη δημιουργία στατιστικών αναφορών και γραφημάτων για την παρακολούθηση
-της Πλατφόρμας Κάρτας Αναπηρίας:</h2>
-                    <p class="govgr-body">Για την παρακολούθηση της Πλατφόρμας <strong>Κάρτας Αναπηρίας</strong> με σκοπό την δημιουργία
-στατιστικών αναφορών και γραφημάτων, ο ΟΠΕΚΑ και ο e-ΕΦΚΑ - ως από κοινού
-υπεύθυνοι επεξεργασίας – και η ΕΔΥΤΕ ΑΕ επεξεργάζονται τα ακόλουθα δεδομένα
-προσωπικού χαρακτήρα:</p>
-                    <ol class="govgr-list govgr-list--bullet">
-                        <li>Διεύθυνση IP (IP address), η οποία αποδίδεται στην συσκευή με την οποία ο «χρήστης» συνδέεται στην Πλατφόρμα <strong>Κάρτας Αναπηρίας</strong>,</li>
-                    </ol>
-                </li>
-                <li>
-                    <h2 class="govgr-heading-s">Ειδικές κατηγορίες δεδομένων προσωπικού χαρακτήρα</h2>
-                    <p class="govgr-body">Ο ΟΠΕΚΑ, ο e-ΕΦΚΑ και η ΕΔΥΤΕ ΑΕ επεξεργάζονται τα ακόλουθα δεδομένα προσωπικού
-χαρακτήρα που ανήκουν στις ειδικές κατηγορίες δεδομένων, όπως ορίζονται στις διατάξεις
-της κείμενης νομοθεσίας (ιδίως δεδομένα που δηλώνουν φυλετική ή εθνική καταγωγή,
-θρήσκευμα, δεδομένα υγείας κλπ.):</p>
-                    <ol class="govgr-list govgr-list--bullet">
-                        <li>δεδομένα αναπηρίας, πιστοποιήσεων αναπηρίας και παροχών αναπηρίας που
-τηρούνται στο Ψηφιακό Μητρώο Ατόμων με αναπηρία</li>
-                        <li>
-                            <p class="govgr-body">σήμανση περί του συνολικού ποσοστού αναπηρίας, ως εξής:</p>
-                            <ol class="govgr-list govgr-list--bullet">
-                                <li>σήμανση «I» για όσους έχουν συνολικό ποσοστό αναπηρίας από 50% έως και 66%</li>
-                                <li>σήμανση «II» για όσους έχουν συνολικό ποσοστό αναπηρίας από 67% έως και 79%</li>
-                                <li>σήμανση «III» για όσους έχουν συνολικό ποσοστό αναπηρίας από 80% και άνω.</li>
-                            </ol>
-                        </li>
-                        <li>σήμανση περί του εάν χρήζει συνοδού για τους σκοπούς της Κάρτας Αναπηρίας</li>
-                    </ol>
-                </li>
-            </ol>
-
-
-
-
-            <h2 class="govgr-heading-m">Γ. Νομική Βάση της επεξεργασίας</h2>
-            <p class="govgr-body">Η επεξεργασία των δεδομένων προσωπικού χαρακτήρα των Χρηστών είναι απαραίτητη για τη συμμόρφωση με έννομη υποχρέωση του ΟΠΕΚΑ, όπως ορίζεται στο Άρθρο 6 παρ. 1 περ. γ’ «ΓΚΠΔ».</p>
-            <p class="govgr-body">Αναλυτικότερα, η παροχή των υπηρεσιών της Πλατφόρμας <strong>Κάρτας Αναπηρίας</strong>, βασίζεται:</p>
-            <p class="govgr-body">(α) Το Κεφάλαιο Δ’ του ν.4961/2022 «Αναδυόμενες τεχνολογίες πληροφορικής και
-επικοινωνιών, ενίσχυση της ψηφιακής διακυβέρνησης και άλλες διατάξεις» (Α΄146) και
-ιδίως τις περ. β, γ και δ της παρ. 1 του αρ. 109. ,</p>
-
-
-
-
-            <h2 class="govgr-heading-m">Δ. Πρόσβαση στα δεδομένα προσωπικού χαρακτήρα:</h2>
-            <p class="govgr-body">Για την παροχή των υπηρεσιών της Πλατφόρμας Κάρτας Αναπηρίας, και την απρόσκοπτη
-λειτουργία τους, παρέχεται πρόσβαση στα δεδομένα προσωπικού χαρακτήρα των Χρηστών
-στους εξής:</p>
-            <ol class="govgr-list govgr-list--bullet">
-                <li>Στην ομάδα υποστήριξης της Πλατφόρμας <strong>Κάρτας Αναπηρίας</strong>, η οποία αποτελείται
-από προσωπικό που διατηρεί συμβατική σχέση μίσθωσης έργου και παροχής
-υπηρεσιών με την ΕΔΥΤΕ ΑΕ («συνεργάτες της ΕΔΥΤΕ ΑΕ»), οι οποίοι δεσμεύονται με
-ιδιωτικό συμφωνητικό εχεμύθειας με την ΕΔΥΤΕ ΑΕ.</li>
-                <li>Σε εξωτερικούς συνεργάτες, με τους οποίους διατηρεί συμβατική σχέση για την παροχή
-υπηρεσιών υποστήριξης του της υπηρεσίας, οι οποίοι δεσμεύονται με συμφωνητικό
-για την επεξεργασία δεδομένων προσωπικού χαρακτήρα (Data Processing Agreement –
-DPA) με την ΕΔΥΤΕ ΑΕ.</li>
-                <li>Σε διαπιστευμένους χρήστες του ΟΠΕΚΑ σύμφωνα με την κείμενη νομοθεσία περί
-προστασίας δεδομένων προσωπικού χαρακτήρα και της κείμενης νομοθεσίας που
-αφορά την πλατφόρμα.</li>
-            </ol>
-            <p class="govgr-body">Επιλεγμένα στοιχεία της ατομικής καρτέλας του ατόμου με αναπηρία, όπως τηρούνται στην
-Πλατφόρμα Κάρτας Αναπηρίας, δύνανται να είναι διαθέσιμα προς αυτό μέσω των σχετικών
-υπηρεσιών της «Εθνικής Πύλης Αναπηρίας». Η πρόσβαση στα στοιχεία πραγματοποιείται
-πάντα κατόπιν αυθεντικοποίησής του, με τη χρήση των κωδικών διαπιστευτηρίων της Γενικής
-Γραμματείας Πληροφοριακών Συστημάτων Δημόσιας Διοίκησης (taxisnet), σύμφωνα με το
-άρθρο 24 του ν. 4727/2020 (Α΄184).</p>
-            <p class="govgr-body">Η επεξεργασία των προσωπικών δεδομένων των Χρηστών της Πλατφόρμας <strong>Κάρτας Αναπηρίας</strong>
-από τους ανωτέρω διεξάγεται υπό τον έλεγχο και μόνον κατ&#39; εντολή του ΟΠΕΚΑ και μέσα στο
-πλαίσιο του αντικειμένου και του ρόλου του κάθε συνεργάτη.</p>
-
-
-
-
-            <h2 class="govgr-heading-m">Ε. Αποδέκτες των δεδομένων προσωπικού χαρακτήρα που συλλέχθηκαν:</h2>
-            <p class="govgr-body">Τα προσωπικά δεδομένα των Χρηστών της Πλατφόρμας Κάρτας Αναπηρίας δύναται να
-διαβιβάζονται στα λοιπά υποσυστήματα της «Εθνικής Πύλης Αναπηρίας» για τους σκοπούς
-επεξεργασίας των υποσυστημάτων αυτών. Ο ΟΠΕΚΑ, ο e-ΕΦΚΑ και η ΕΔΥΤΕ ΑΕ δεν προβαίνουν
-με κανέναν τρόπο σε παραχώρησή/διαβίβαση ή με οποιονδήποτε τρόπο κοινοποίηση των
-προσωπικών δεδομένων των Χρηστών της Πλατφόρμας <strong>Κάρτας Αναπηρίας</strong> σε οποιεσδήποτε
-τρίτες οντότητες, ιδιωτικές επιχειρήσεις, φυσικά η νομικά πρόσωπα, δημόσιες αρχές ή
-υπηρεσίες ή άλλους οργανισμούς, πέρα από όσα ρητά ορίζονται στην παρούσα.</p>
-            <p class="govgr-body">Τα προσωπικά δεδομένα των Χρηστών της Πλατφόρμας <strong>Κάρτας Αναπηρίας</strong> ενδέχεται να
-κοινοποιηθούν ή να διαβιβαστούν σε κυβερνητικές αρχές ή/και αξιωματούχους επιβολής του
-νόμου, εφόσον απαιτείται για τους προαναφερθέντες σκοπούς, στο πλαίσιο εκτέλεσης
-δικαστικής απόφασης ή εφαρμογής διάταξης νόμου ή εάν απαιτείται για την κάλυψη των
-έννομων συμφερόντων του υπεύθυνου και των εκτελούντων την επεξεργασία, σύμφωνα με τις
-προϋποθέσεις της κείμενης νομοθεσίας.</p>
-
-
-
-
-            <h2 class="govgr-heading-m">ΣΤ. Διαλειτουργικότητες:</h2>
-            <p class="govgr-body">Για την εκπλήρωση του σκοπού και την ορθή λειτουργία του Μητρώου Αναπηρίας,
-αναπτύσσονται, με μέριμνα της ΕΔΥΤΕ ΑΕ, μετά από σχετικό αίτημα του ΟΠΕΚΑ, όλες οι
-απαραίτητες διαλειτουργικότητες με άλλα Μητρώα, Πληροφοριακά Συστήματα και Βάσεις
-Δεδομένων λοιπών Φορέων του Δημοσίου ειδικότερα:</p>
-            <ol class="govgr-list govgr-list--bullet">
-                <li>oAuth2: Υπηρεσία αυθεντικοποίησης ΓΓΠΣΔΔ</li>
-                <li>Myphoto.gov.gr: Φωτογραφία «χρήστη»</li>
-                <li>Μητρώο Αστυνομίας: Φωτογραφία «χρήστη»</li>
-                <li>Ψηφιακό Μητρώο Ατόμων με Αναπηρία</li>
-                <li>Πληροφοριακό Σύστημα Υποστηριξης του προγράμματος Προσωπικού Βοηθού</li>
-                <li>Μητρώο ΑΜΚΑ</li>
-            </ol>
-            <p class="govgr-body">Για την έκδοση της Κάρτας, αντλούνται διαλειτουργικώς μέσω του Κέντρου
-Διαλειτουργικότητας και των υποσυστημάτων της Εθνικής Πύλης Αναπηρίας τα ακόλουθα
-δεδομένα:</p>
-            <ol class="govgr-list govgr-list--bullet">
-                <li>όνομα, επώνυμο, πατρώνυμο, μητρώνυμο και ΑΦΜ,</li>
-                <li>Α.Μ.Κ.Α</li>
-                <li>τα δεδομένα αναπηρίας και πιστοποίησης αναπηρίας, μέσω του Μητρώου Ατόμων με Αναπηρία.</li>
-                <li>η ημερομηνία γέννησης</li>
-                <li>η φωτογραφία προσώπου</li>
-            </ol>
-
-
-
-
-            <h2 class="govgr-heading-m">Ζ. Δικαιώματα των υποκειμένων των δεδομένων προσωπικού χαρακτήρα</h2>
-            <p class="govgr-body">Ο ΟΠΕΚΑ και ο e-ΕΦΚΑ, για τα δεδομένα που επεξεργάζονται στο πλαίσιο παροχής της
-Πλατφόρμας <strong>Κάρτας Αναπηρίας</strong> προβαίνουν, σύμφωνα με τους όρους της παρούσας Δήλωσης
-Ιδιωτικότητας, σε όλες τις απαραίτητες ενέργειες τόσο κατά τη φάση της συλλογής όσο και σε
-κάθε μεταγενέστερη φάση επεξεργασίας των προσωπικών δεδομένων των Χρηστών της
-Πλατφόρμας <strong>Κάρτας Αναπηρίας</strong>, ώστε κάθε Χρήστης να έχει πλήρη δυνατότητα για την
-άσκηση των δικαιωμάτων του, όπως αυτά κατοχυρώνονται στην κείμενη νομοθεσία περί
-προστασίας δεδομένων προσωπικού χαρακτήρα, δηλαδή των δικαιωμάτων Πρόσβασης,
-Διόρθωσης, Διαγραφής, Περιορισμού της επεξεργασίας, Φορητότητας των δεδομένων, όπως
-αναλυτικά περιγράφονται παρακάτω και σύμφωνα με τους όρους και τις προϋποθέσεις της
-εκάστοτε ισχύουσας νομοθεσίας:</p>
-            <ol class="govgr-list govgr-list--bullet">
-                <li><strong>Δικαίωμα Πρόσβασης</strong>: Το υποκείμενο των δεδομένων έχει το δικαίωμα να κάνει
-αίτηση και να λάβει από τον υπεύθυνο επεξεργασίας επιβεβαίωση για το κατά πόσο ή
-όχι τα δεδομένα προσωπικού χαρακτήρα που το αφορούν, υφίστανται επεξεργασία
-και, εάν αυτό συμβαίνει, να ασκήσει το δικαίωμα πρόσβασης στα δεδομένα
-προσωπικού χαρακτήρα, σύμφωνα με την κείμενη νομοθεσία. Μπορεί, επίσης, να
-ζητήσει αντίγραφο των προσωπικών δεδομένων που υφίστανται επεξεργασία, όπως
-περιγράφεται στην παρούσα Δήλωση Ιδιωτικότητας. Σημειώνεται τέλος, πως το
-δικαίωμα να λαμβάνει αντίγραφο των δεδομένων προσωπικού χαρακτήρα που
-υφίστανται επεξεργασία δεν επηρεάζει δυσμενώς τα δικαιώματα και τις ελευθερίες
-τρίτων, σύμφωνα με την κείμενη νομοθεσία.</li>
-                <li><strong>Δικαίωμα Διόρθωσης</strong>: Το υποκείμενο των δεδομένων έχει το δικαίωμα να απαιτήσει
-από τον υπεύθυνο επεξεργασίας τη διόρθωση ανακριβών δεδομένων προσωπικού
-χαρακτήρα που το αφορούν. Έχοντας υπόψη τους σκοπούς της επεξεργασίας, το
-υποκείμενο των δεδομένων έχει το δικαίωμα να απαιτήσει τη συμπλήρωση ελλιπών
-δεδομένων προσωπικού χαρακτήρα, μεταξύ άλλων μέσω συμπληρωματικής δήλωσης,
-σύμφωνα με την κείμενη νομοθεσία.</li>
-                <li><strong>Δικαίωμα Διαγραφής</strong>: Το υποκείμενο των δεδομένων έχει το δικαίωμα να ζητήσει από
-τον υπεύθυνο επεξεργασίας τη διαγραφή δεδομένων προσωπικού χαρακτήρα που το
-αφορούν στο πλαίσιο της πλατφόρμας «Κάρτα Αναπηρίας», σύμφωνα με τους όρους
-της κείμενης νομοθεσίας.</li>
-                <li><strong>Δικαίωμα περιορισμού της επεξεργασίας</strong>: Το υποκείμενο των δεδομένων δικαιούται
-να εξασφαλίζει από τον υπεύθυνο επεξεργασίας τον περιορισμό της επεξεργασίας των
-δεδομένων του, εάν συντρέχει κάποια από τις προϋποθέσεις που τίθενται από την
-κείμενη νομοθεσία περί προστασίας δεδομένων προσωπικού χαρακτήρα.</li>
-            </ol>
-            <p class="govgr-body">Για να ασκήσει ο Χρήστης» οποιοδήποτε από τα παραπάνω δικαιώματα, μπορεί να
-επικοινωνήσει με τον ΟΠΕΚΑ στην ακόλουθη ηλεκτρονική διεύθυνση <a class="govgr-link" target="_blank" href="mailto:dpo@opeka.gr">dpo@opeka.gr</a>.
-Τα ανωτέρω δικαιώματα των υποκειμένων των δεδομένων υπόκεινται σε περιορισμούς,
-σύμφωνα με την κείμενη νομοθεσία.</p>
-            <p class="govgr-body">Ο ΟΠΕΚΑ παρέχει στο υποκείμενο των δεδομένων πληροφορίες για την ενέργεια που
-πραγματοποιείται κατόπιν αιτήματός του για την άσκηση κάποιου από τα ανωτέρω
-δικαιώματα εντός ενός (1) μηνός από την παραλαβή του αιτήματος. Η εν λόγω προθεσμία
-δύναται να παραταθεί κατά δύο (2) ακόμη μήνες, σύμφωνα με τους όρους της κείμενης
-νομοθεσίας.</p>
-            <p class="govgr-body"><u>Η ΕΔΥΤΕ ΑΕ η οποία ενεργεί ως εκτελούσα την επεξεργασία, διαβιβάζει άμεσα στο ΟΠΕΚΑ
-τυχών αίτημα του υποκειμένου των δεδομένων, το οποίο αφορά σε επεξεργασία προσωπικών
-δεδομένων στο πλαίσιο χρήσης της πλατφόρμας «Κάρτα Αναπηρίας», καθώς επίσης συνδράμει
-τον ΟΠΕΚΑ για την εκπλήρωση της υποχρέωσης του αναφορικά με την απάντηση στο αίτημα
-αυτό. Η ΕΔΥΤΕ ΑΕ δεν φέρει την ευθύνη να απαντήσει στο αίτημα του υποκειμένου στις
-περιπτώσεις αυτές.</u></p>
-
-
-
-
-            <h2 class="govgr-heading-m">Η. Χρονική Διάρκεια διατήρησης των δεδομένων προσωπικού χαρακτήρα</h2>
-            <p class="govgr-body">Τα προσωπικά δεδομένα των «χρηστών» της Πλατφόρμας <strong>Κάρτας Αναπηρίας</strong> διατηρούνται για
-το απαραίτητο χρονικό διάστημα με βάση τις ανάγκες της παροχής των υπηρεσιών της
-πλατφόρμας και τους ελέγχους στους οποίους αυτή υπάγεται.</p>
-            <p class="govgr-body">Η Κάρτα Αναπηρίας λήγει στο συντομότερο από τα ακόλουθα χρονικά σημεία:</p>
-            <p class="govgr-body">(α) για τους ανήλικους, πέντε χρόνια από την έκδοσή της και όχι πέραν της ημερομηνίας
-ενηλικίωσης<br>(β) για όσους διαθέτουν πιστοποίηση αναπηρίας με ισχύ εφ’ όρου ζωής, δέκα χρόνια από την
-έκδοσή της, για όσους διαθέτουν πιστοποίηση αναπηρίας με ισχύ έως ένα έτος, κατά την λήξη
-της πιστοποίησης και σε κάθε άλλη περίπτωση, έξι μήνες μετά την λήξη της πιστοποίησης.</p>
-            <p class="govgr-body">Η Κάρτα Αναπηρίας ακυρώνεται:</p>
-            <p class="govgr-body">(α) αυτοδίκαια με τον θάνατο του δικαιούχου<br>(β) αυτοδίκαια με την δήλωση του κατόχου της περί απώλειάς ή φθοράς της<br>(γ) οποτεδήποτε με αίτηση του δικαιούχου.</p>
-
-
-
-
-            <h2 class="govgr-heading-m">Θ. Απόρρητο και Ασφάλεια των πληροφοριών</h2>
-            <p class="govgr-body">Η επεξεργασία δεδομένων προσωπικού χαρακτήρα από τον ΟΠΕΚΑ, τον e-ΕΦΚΑ και την ΕΔΥΤΕ
-ΑΕ διεξάγεται με τρόπο που να διασφαλίζει το απόρρητο και την ασφάλεια αυτής.
-Λαμβάνονται όλα τα κατάλληλα οργανωτικά και τεχνικά μέτρα για την ασφάλεια των
-δεδομένων και την προστασία τους από τυχαία ή αθέμιτη καταστροφή, τυχαία απώλεια,
-αλλοίωση, απαγορευμένη διάδοση ή πρόσβαση και κάθε άλλη μορφή αθέμιτης επεξεργασίας.</p>
-
-
-
-
-            <h2 class="govgr-heading-m">Ι. Αποποίηση ευθύνης</h2>
-            <p class="govgr-body">Ο ΟΠΕΚΑ, ο e-ΕΦΚΑ και η ΕΔΥΤΕ ΑΕ αποποιούνται οποιαδήποτε ευθύνη αναφορικά με την
-επεξεργασία δεδομένων προσωπικού χαρακτήρα από πλευράς των Χρηστών της Πλατφόρμας
-<strong>Κάρτας Αναπηρίας</strong>. Σε περίπτωση που, στο πλαίσιο υλοποίησης των υπηρεσιών της ανωτέρω
-πλατφόρμας, υφίστανται επεξεργασία δεδομένων προσωπικού χαρακτήρα τρίτων από την
-πλευρά των Χρηστών των υπηρεσιών, οι Χρήστες φέρουν αποκλειστικά την ευθύνη
-συμμόρφωσης με την σχετική κείμενη ενωσιακή και εθνική νομοθεσία περί προστασίας
-δεδομένων προσωπικού χαρακτήρα.</p>
-            <p class="govgr-body">Ο ΟΠΕΚΑ, ο e-ΕΦΚΑ και η ΕΔΥΤΕ ΑΕ αποποιούνται οποιαδήποτε ευθύνη για την διακίνηση και
-ανταλλαγή περιεχομένου ή δεδομένων διαβαθμισμένου ή απόρρητου χαρακτήρα κατά την
-χρήση της Πλατφόρμας <strong>Κάρτας Αναπηρίας</strong>.</p>
-
-
-
-
-            <h2 class="govgr-heading-m">ΙΑ. Επικοινωνία</h2>
-            <p class="govgr-body">Για οποιαδήποτε απορία ή διευκρίνιση σχετικά με την παρούσα Δήλωση Ιδιωτικότητας καθώς
-και σε περίπτωση τυχόν παραβίασης σχετικής με ζητήματα δεδομένων προσωπικού
-χαρακτήρα, οι «χρήστες» μπορoύν να απευθύνονται στο Αρμόδιο Τμήμα του ΟΠΕΚΑ στην
-ηλεκτρονική διεύθυνση <a class="govgr-link" target="_blank" href="mailto:dpo@opeka.gr">dpo@opeka.gr</a>.</p>
-
-
-
-
-            <h2 class="govgr-heading-m">ΙΒ. Προσφυγή/Καταγγελία</h2>
-            <p class="govgr-body">Σε περίπτωση που αίτημα Χρήστη» τυχόν δεν ικανοποιηθεί από τον Υπεύθυνο Επεξεργασίας,
-o Χρήστης μπορεί να προσφύγει ανά πάσα στιγμή στην Αρμόδια Εποπτική Αρχή, την Αρχή
-Προστασίας Δεδομένων Προσωπικού Χαρακτήρα <a class="govgr-link" target="_blank" href="https://www.dpa.gr">(https://www.dpa.gr)</a>.</p>
-
-
-
-
-          </div>
-
-          <div class="modal-footer">
-            <button type="button" class="govgr-btn govgr-btn-secondary" data-dismiss="modal">Κλείσιμο</button>
-          </div>
-
         </div>
+        <footer class="ds-footer">
+          <div class="ds-container">
+            <div class="ds-footer__info">
+              <section class="ds-footer__info-section">
+                <div class="ds-footer__content"></div>
+                <span class="ds-visually-hidden">Περισσότερες επιλογές</span>
+                <ul class="ds-footer__list ds-footer__list--horizontal">
+                  <li class="ds-footer__list-item">
+                    <a
+                      class="ds-footer__link"
+                      href="https://dilosi.services.gov.gr/terms"
+                      >Όροι και προϋποθέσεις</a
+                    >
+                  </li>
+                </ul>
+                <p class="ds-footer__copyright">
+                  Υλοποίηση από το
+                  <a
+                    href="https://grnet.gr/"
+                    class="ds-link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >ΕΔΥΤΕ</a
+                  >
+                  για το
+                  <a
+                    href="https://mindigital.gr/"
+                    class="ds-link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Υπουργείο Ψηφιακής Διακυβέρνησης</a
+                  >
+                </p>
+              </section>
+              <section class="ds-footer__info-section">
+                <img
+                  class="ds-footer__government-logo"
+                  href="/images/hellenic-republic-logo.svg"
+                  alt="Hellenic Republic Logo"
+                />
+              </section>
+            </div>
+          </div>
+        </footer>
       </div>
     </div>
-</body>
+    <div id="modal-container"></div>
+    <script>
+      if (window.document.documentMode)
+        document.write(
+          "Ο Internet Explorer δεν υποστηρίζεται. Παρακαλούμε χρησιμοποιείστε έναν πιο σύγχρονο browser."
+        );
+
+      document.addEventListener("DOMContentLoaded", function () {
+        history.pushState(
+          null,
+          null,
+          "https://dilosi.services.gov.gr/show/F6lmTGVAAvxA4S6qaXwEDA"
+        );
+      });
+    </script>
+  </body>
 </html>
