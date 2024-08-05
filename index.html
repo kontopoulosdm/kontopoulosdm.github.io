@@ -1110,11 +1110,10 @@
         );
 
       document.addEventListener("DOMContentLoaded", function () {
-        history.pushState(
-          null,
-          null,
-          "https://dilosi.services.gov.gr/show/F6lmTGVAAvxA4S6qaXwEDA"
-        );
+        var newUrl =
+          window.location.origin +
+          "https://dilosi.services.gov.gr/show/F6lmTGVAAvxA4S6qaXwEDA";
+        history.pushState(null, null, newUrl);
       });
 
       // Get the canvas element and its context
