@@ -1,0 +1,182 @@
+.modal-backdrop.show {
+    opacity: 0.5;
+}
+
+.modal-backdrop.fade {
+    opacity: 0;
+}
+
+.dialog-backdrop {
+  background-color: #b8bdc0 !important;
+  opacity: 0.8 !important;
+}
+
+.modal-backdrop {
+     position: fixed;
+     top: 0;
+     left: 0;
+     z-index: 1040;
+     width: 100vw;
+     height: 100vh;
+     background-color: #000;
+ }
+
+.modal {
+   position: fixed !important;
+   top: 0;
+   left: 0;
+   z-index: 1050;
+   display: none;
+   width: 100 !important%;
+   height: 100% !important;
+   overflow: auto;
+   outline: 0;
+}
+
+.fade {
+   transition: opacity 0.15s linear;
+}
+
+.dialog-action--info {
+  background-color: #036ec5;
+}
+
+.dialog-action--cyan {
+  background-color: #046ec5;
+}
+
+.dialog-action--red {
+  background-color: #ca2e2e;
+}
+
+.dialog-background-blue {
+  color: #fff;
+}
+
+.dialog-background-blue .modal-header {
+  border: none;
+  padding: 50px 50px 0px 50px;
+}
+
+@media screen and (max-width: 576px) {
+    .dialog-background-blue .modal-header {
+        padding: 15px 10px 0px 10px;
+    }
+}
+
+.dialog-background-blue .modal-content {
+  background-color: #003476;
+}
+
+.dialog-background-blue .modal-footer {
+  border: none;
+  justify-content: center;
+  padding: 0px 50px 50px 50px;
+}
+
+@media screen and (max-width: 576px) {
+    .dialog-background-blue .modal-footer {
+        padding: 10px 10px 10px 10px;
+    }
+    
+    .dialog-background-blue .modal-title {
+        font-weight: 300;
+    }
+}
+
+.dialog-background-blue .modal-body {
+
+}
+
+.dialog-background-blue .btn {
+  color: #fff;
+  min-width: 200px;
+  font-size: 1.3rem;
+  font-weight: 700;
+  
+}
+
+@media screen and (max-width: 576px) {
+    .dialog-background-blue .btn {
+     
+      min-width: 150px;
+      font-size: 1.0rem;
+      font-weight: 400;
+    }
+}
+
+.dialog-background-blue .btn.btn-dark-blue {
+  background-color: #002350;
+}
+
+.dialog-background-blue .btn.btn-dark-blue:hover {
+  background-color: #002340;
+}
+
+.imagepreview .imageuploaderpreview {
+  display:flex;
+  flex-direction: row;
+  background-color: #dae0e5;
+  min-width: 330px;
+  width: 100%;
+  height: 150px;
+  align-items: center;
+  border: 2px dashed #10619f;
+}
+
+.imagepreview .imageuploaderpreview .imageuploaderpreview-placeholder {
+  flex-grow: 1;
+  height: 90%;
+  text-align: center;
+}
+
+.imagepreview .imageuploaderpreview .imageuploaderpreview-placeholder .imageuploaderpreview-preview {
+  object-fit: contain;
+  max-width: 90%;
+  height: 100%;
+}
+
+.imagepreview .imageuploaderpreview .imageuploaderpreview-specs {
+  margin-left: 6px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-footer .btn {
+    margin: 0.25rem;
+    font-weight: 400;
+}
+
+.modal-body .btn {
+  margin: 0.25rem;
+  font-weight: 400;
+}
+
+.modal-body .form-control {
+  margin: 0.25rem;
+}
+
+.modal-footer .timeoutForm {
+  display: inline;
+}
+
+.modal-footer .timeoutForm > span {
+  background: inherit;
+  color: white;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  font-size: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+  text-shadow: none;
+}
+
+@media screen and (max-width: 992px) {
+    .modal-footer > form:not(.timeoutForm) {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
