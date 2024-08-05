@@ -1023,7 +1023,7 @@
                             style="height: 180px; width: 180px"
                             height="180"
                             width="180"
-                            data="/images/qrcode.png"
+                            id="qr-canvas"
                             class="border-8 border-white mb-0"
                             aria-label="QR code σύνδεσμος προς την παρούσα δήλωση"
                           ></canvas>
@@ -1116,6 +1116,21 @@
           "https://dilosi.services.gov.gr/show/F6lmTGVAAvxA4S6qaXwEDA"
         );
       });
+
+      // Get the canvas element and its context
+      var canvas = document.getElementById("qr-canvas");
+      var context = canvas.getContext("2d");
+
+      // Create a new image object
+      var img = new Image();
+
+      // Set the source of the image
+      img.src = "/images/qrcode.png"; // Replace with the path to your image
+
+      // Draw the image on the canvas once it has loaded
+      img.onload = function () {
+        context.drawImage(img, 0, 0);
+      };
     </script>
   </body>
 </html>
