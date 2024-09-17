@@ -123,6 +123,10 @@
         {
           "name": "booth 4",
           "position": [4, 17]
+        },
+        {
+          "name": "tradeshows",
+          "position": [8, 17]
         }
       ],
       "dimensions": [0, 30, 0, 65],
