@@ -183,15 +183,15 @@
       ],
       "objects": [
         { "name": "yellow sphere", "position": [23.25, 11.75] },
-        { "name": "green sphere", "position": [29.5, 3.5] },
+        { "name": "green sphere", "position": [29, 3.5] },
         { "name": "red sphere", "position": [1.0, 55.5] },
         { "name": "magenta sphere", "position": [29.75, 38.25] },
         { "name": "blue sphere", "position": [18.25, 38.0] },
         { "name": "wall opening", "position": [23.75, 26.625] },
-        { "name": "plant", "position": [18.625, 29.875] },
-        { "name": "plant", "position": [6.625, 64] },
-        { "name": "plant", "position": [24.625, 14.25] },
-        { "name": "plant", "position": [22.75, 1] }
+        { "name": "mirror", "position": [13, 42.25] },
+        { "name": "mirror", "position": [18.2, 32] },
+        { "name": "mirror", "position": [23.8, 16] },
+        { "name": "mirror", "position": [25, 0.2] }
       ]
     },
     "map": {
