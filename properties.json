@@ -328,7 +328,7 @@
     "agent": [],
     "navigation": { "allow": [] },
     "translation": {
-      "allow": ["all"],
+      "allow": [],
       "conversation": { "type": "duo" },
       "spatiality": { "type": "room" },
       "panel": { "type": "fixed", "data": [1, 2, 3] }
