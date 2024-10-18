@@ -252,14 +252,14 @@
         "ratio": 0.25,
         "position": [13.52, 4, 4],
         "rotation": [0, 90, 0],
-        "scale": 3.22
+        "scale": 4.2
       },
       {
         "name": "conference_room",
         "ratio": 0.2,
         "position": [26.75, 4, 46.96],
         "rotation": [0, 180, 0],
-        "scale": 5.46
+        "scale": 4.2
       }
     ]
   },
