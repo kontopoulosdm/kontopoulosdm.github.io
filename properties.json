@@ -324,7 +324,7 @@
   },
   {
     "room": "Business Room",
-    "id": [],
+    "id": ["Cct5E3f"],
     "agent": [],
     "navigation": { "allow": ["all"] },
     "translation": {
@@ -333,6 +333,15 @@
       "spatiality": { "type": "room" },
       "panel": { "type": "fixed", "data": [1, 2, 3] }
     },
+    "labels": [
+      {
+        "name": "tradeshows",
+        "ratio": 0.2,
+        "position": [8.9, 4.5, 7.5],
+        "rotation": [0, -90, 0],
+        "scale": 4.5
+      }
+    ],
     "map": { "allow": [] },
     "tutorial": { "allow": [] }
   }
