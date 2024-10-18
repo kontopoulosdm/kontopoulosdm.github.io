@@ -342,6 +342,13 @@
         "scale": 4.5
       }
     ],
+    "help": {
+      "allow": ["all"],
+      "slides": 8,
+      "nav": [5, 6],
+      "no_nav": [7],
+      "ratio": 0.4545
+    },
     "map": { "allow": [] },
     "tutorial": { "allow": [] }
   }
