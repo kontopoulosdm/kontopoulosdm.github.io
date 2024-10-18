@@ -326,7 +326,7 @@
     "room": "Business Room",
     "id": ["Cct5E3f"],
     "agent": [],
-    "navigation": { "allow": ["all"] },
+    "navigation": { "allow": [] },
     "translation": {
       "allow": ["all"],
       "conversation": { "type": "duo" },
