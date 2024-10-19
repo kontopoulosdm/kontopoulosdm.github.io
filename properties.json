@@ -178,16 +178,18 @@
         ]
       ],
       "objects": [
-        { "name": "yellow sphere", "position": [23.25, 11.75] },
-        { "name": "green sphere", "position": [29, 3.5] },
-        { "name": "red sphere", "position": [1.0, 55.5] },
-        { "name": "magenta sphere", "position": [29.75, 38.25] },
-        { "name": "blue sphere", "position": [18.25, 38.0] },
-        { "name": "wall opening", "position": [23.75, 26.625] },
-        { "name": "mirror", "position": [13, 42.25] },
-        { "name": "mirror", "position": [18.2, 32] },
-        { "name": "mirror", "position": [23.8, 16] },
-        { "name": "mirror", "position": [25, 0.2] }
+        { "name": "couches", "position": [19.7, 6.5] },
+        { "name": "elephant", "position": [28.6, 1.55] },
+        { "name": "plants", "position": [29.1, 10.25] },
+        { "name": "mirror", "position": [23.9, 15.9] },
+        { "name": "plants", "position": [24.4, 33.95] },
+        { "name": "fox", "position": [29.0, 41.24] },
+        { "name": "plant", "position": [18.5, 38.95] },
+        { "name": "mirror", "position": [18.3, 32.5] },
+        { "name": "penguin", "position": [21.9, 13.05] },
+        { "name": "unicorn", "position": [13.4, 42.5] },
+        { "name": "plant", "position": [1.5, 47.84] },
+        { "name": "wall opening", "position": [23.75, 26.625] }
       ]
     },
     "map": {
