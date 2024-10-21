@@ -325,15 +325,17 @@
     ]
   },
   {
-    "room": "Business Room",
+    "room": "Social Area",
     "id": ["Cct5E3f"],
     "agent": [],
     "navigation": { "allow": [] },
     "translation": {
-      "allow": [],
-      "conversation": { "type": "duo" },
-      "spatiality": { "type": "room" },
-      "panel": { "type": "fixed", "data": [1, 2, 3] }
+      "allow": ["all"],
+      "conversation": { "type": "bubble" },
+      "spatiality": {
+        "type": "room"
+      },
+      "panel": { "type": "avatar" }
     },
     "labels": [
       {
