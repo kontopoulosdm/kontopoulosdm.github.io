@@ -193,7 +193,7 @@
     },
     "tutorial": {
       "allow": ["all"],
-      "slides": 4,
+      "slides": 1,
       "position": [0, 0, -1],
       "rotation": [0, 0, 0],
       "ratio": 0.4545,
