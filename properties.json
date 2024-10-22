@@ -192,7 +192,7 @@
       "scale": 1.5
     },
     "tutorial": {
-      "allow": [],
+      "allow": ["all"],
       "slides": 4,
       "position": [0, 0, -1],
       "rotation": [0, 0, 0],
