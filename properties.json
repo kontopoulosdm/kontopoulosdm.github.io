@@ -19,14 +19,7 @@
     ],
     "agent": [],
     "navigation": {
-      "allow": [
-        "9qsnWnJ",
-        "QBomv74",
-        "af9PnW9",
-        "E2XSyEf",
-        "gdFfcCM",
-        "9gu4MCe"
-      ]
+      "allow": ["all"]
     },
     "translation": { "allow": [] },
     "map": {
