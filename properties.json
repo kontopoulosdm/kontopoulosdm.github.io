@@ -31,9 +31,9 @@
     "tutorial": {
       "allow": ["all"],
       "slides": 15,
-      "position": [1.0, 2.0, 5],
+      "position": [5, 2.0, 9.5],
       "ratio": 0.4545,
-      "rotation": [0, 1.5708, 0],
+      "rotation": [0, 180, 0],
       "type": "fixed"
     },
     "help": {
