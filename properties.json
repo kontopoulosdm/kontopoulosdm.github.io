@@ -33,7 +33,7 @@
       "slides": 15,
       "position": [5, 2.0, 9.5],
       "ratio": 0.4545,
-      "rotation": [0, 180, 0],
+      "rotation": [0, 3.14159, 0],
       "type": "fixed"
     },
     "help": {
