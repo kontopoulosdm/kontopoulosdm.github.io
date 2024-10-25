@@ -32,14 +32,14 @@
       {
         "name": "before_starting",
         "position": [5, 4, 9.9],
-        "rotation": [0, 3.14159, 0],
+        "rotation": [0, 180, 0],
         "scale": 7.7,
         "ratio": 0.25
       },
       {
         "name": "conference_entrance",
         "position": [9.9, 4, 5],
-        "rotation": [0, -1.5708, 0],
+        "rotation": [0, -90, 0],
         "scale": 7.7,
         "ratio": 0.2
       }
