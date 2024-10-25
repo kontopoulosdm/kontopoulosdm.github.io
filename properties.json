@@ -1,25 +1,10 @@
 [
   {
     "room": "Lobby",
-    "id": [
-      "9qsnWnJ",
-      "QBomv74",
-      "af9PnW9",
-      "E2XSyEf",
-      "gdFfcCM",
-      "9gu4MCe",
-      "3JoiD9s",
-      "rGknn7t",
-      "HTEeuxW",
-      "vEyR7ns",
-      "7KLVrt6",
-      "2EnuRGU",
-      "8KqMcmc",
-      "pW3AoDX"
-    ],
+    "id": ["QBomv74", "DdXYP6a", "pW3AoDX"],
     "agent": [],
     "navigation": {
-      "allow": ["all"]
+      "allow": [""]
     },
     "translation": { "allow": [] },
     "map": {
@@ -62,21 +47,7 @@
   },
   {
     "room": "Tradeshows",
-    "id": [
-      "8ZQJfxA",
-      "pptdq9h",
-      "SDr5ZWj",
-      "LC6urY7",
-      "2WHssVZ",
-      "rYSLKJH",
-      "CsFCDfN",
-      "QnkaogG",
-      "Xks4ep7",
-      "Hy2Y5Y2",
-      "QSji8cs",
-      "uy7H9tk",
-      "iYxuEsk"
-    ],
+    "id": ["pptdq9h", "iYxuEsk"],
     "agent": ["all"],
     "translation": {
       "allow": ["all"],

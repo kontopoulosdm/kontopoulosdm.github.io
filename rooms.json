@@ -1,12 +1,12 @@
 [
   {
     "room": "lobby",
-    "nav": ["9qsnWnJ", "QBomv74", "af9PnW9", "E2XSyEf", "gdFfcCM", "9gu4MCe"],
-    "no_nav": ["3JoiD9s", "rGknn7t", "HTEeuxW", "vEyR7ns", "7KLVrt6", "2EnuRGU"]
+    "nav": ["pW3AoDX", "QBomv74", "DdXYP6a"],
+    "no_nav": [""]
   },
   {
     "room": "tradeshows",
-    "nav": ["iYxuEsk", "pptdq9h", "SDr5ZWj", "LC6urY7", "2WHssVZ", "rYSLKJH"],
-    "no_nav": ["CsFCDfN", "QnkaogG", "Xks4ep7", "Hy2Y5Y2", "QSji8cs", "uy7H9tk"]
+    "nav": ["iYxuEsk", "pptdq9h", "pptdq9h"],
+    "no_nav": [""]
   }
 ]
