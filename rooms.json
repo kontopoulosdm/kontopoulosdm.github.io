@@ -1,12 +1,10 @@
 [
   {
     "room": "lobby",
-    "nav": ["pW3AoDX", "QBomv74", "DdXYP6a"],
-    "no_nav": [""]
+    "id": ["pW3AoDX", "QBomv74", "DdXYP6a"]
   },
   {
     "room": "tradeshows",
-    "nav": ["iYxuEsk", "pptdq9h", "pptdq9h"],
-    "no_nav": [""]
+    "id": ["iYxuEsk", "pptdq9h", "pptdq9h"]
   }
 ]
