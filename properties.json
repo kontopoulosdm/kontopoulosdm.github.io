@@ -39,7 +39,7 @@
       {
         "name": "conference_entrance",
         "position": [9.9, 4, 5],
-        "rotation": [0, 90, 0],
+        "rotation": [0, 270, 0],
         "scale": 7.7,
         "ratio": 0.2
       }
